@@ -1029,7 +1029,11 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;}
         <div class="cform rv">
           <h3>预约免费测量</h3>
           <p>填写以下信息，顾问将尽快与您联系，预约上门测量时间。</p>
-          <form id="contactForm" novalidate>
+          <form id="contactForm" action="https://api.web3forms.com/submit" method="POST" novalidate>
+           <input type="hidden" name="access_key" value="8e33aab7-889d-4660-865f-54109b465f4b">
+           <input type="hidden" name="subject" value="安家门窗官网 · 新咨询表单">
+           <input type="hidden" name="from_name" value="安家门窗官网">
+           <input type="checkbox" name="botcheck" style="display:none;" tabindex="-1" autocomplete="off">
             <div class="form-grid">
               <div class="f-field">
                 <label for="cf-name">您的称呼 <em>*</em></label>
@@ -1264,24 +1268,43 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;}
     });
   });
 
-  /* ---------- 联系表单 ---------- */
-  var form = document.getElementById('contactForm');
-  if(form){
-    form.addEventListener('submit', function(e){
-      e.preventDefault();
-      var name = document.getElementById('cf-name').value.trim();
-      var phone = document.getElementById('cf-phone').value.trim();
-      var phoneOk = /^1[3-9]\d{9}$/.test(phone) || /^0\d{2,3}-?\d{7,8}$/.test(phone) || /^400\d{7}$/.test(phone);
-      if(!name){ alert('请填写您的称呼'); document.getElementById('cf-name').focus(); return; }
-      if(!phone){ alert('请填写联系电话'); document.getElementById('cf-phone').focus(); return; }
-      if(!phoneOk){ alert('联系电话格式不正确，请检查后重试'); document.getElementById('cf-phone').focus(); return; }
-      var ok = document.getElementById('formOk');
-      ok.classList.add('show');
-      form.reset();
-      ok.scrollIntoView({behavior:'smooth', block:'center'});
-      setTimeout(function(){ ok.classList.remove('show'); }, 8000);
+  /* ---------- 联系表单（Web3Forms 提交） ---------- */
+var form = document.getElementById('contactForm');
+if(form){
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var name = document.getElementById('cf-name').value.trim();
+    var phone = document.getElementById('cf-phone').value.trim();
+    var phoneOk = phone.length >= 5 && /^[+\d][\d\s\-()]{4,}$/.test(phone);
+    if(!name){ alert('请填写您的称呼'); document.getElementById('cf-name').focus(); return; }
+    if(!phone){ alert('请填写联系电话'); document.getElementById('cf-phone').focus(); return; }
+    if(!phoneOk){ alert('联系电话格式不正确，请检查后重试'); document.getElementById('cf-phone').focus(); return; }
+    var ok = document.getElementById('formOk');
+    var btn = form.querySelector('button[type=submit]');
+    btn.disabled = true;
+    btn.textContent = '正在提交…';
+    fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: {'Accept': 'application/json'},
+      body: new FormData(form)
+    }).then(function(r){ return r.json(); }).then(function(data){
+      btn.disabled = false;
+      btn.textContent = '提交预约信息';
+      if(data.success){
+        ok.classList.add('show');
+        form.reset();
+        ok.scrollIntoView({behavior:'smooth', block:'center'});
+        setTimeout(function(){ ok.classList.remove('show'); }, 8000);
+      } else {
+        alert('提交失败：' + (data.message || '请稍后重试，或直接拨打热线电话。'));
+      }
+    }).catch(function(){
+      btn.disabled = false;
+      btn.textContent = '提交预约信息';
+      alert('网络异常，请稍后重试，或直接拨打热线电话。');
     });
-  }
+  });
+}
 
   /* ---------- 滚动揭示 ---------- */
   var revealEls = document.querySelectorAll('.rv');
