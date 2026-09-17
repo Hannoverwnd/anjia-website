@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- English Default Homepage -->
   <url>
     <loc>https://chuanggaodoors.cn/</loc>
     <lastmod>2026-09-17</lastmod>
@@ -9,7 +9,6 @@
     <priority>1.0</priority>
   </url>
 
-  <!-- Chinese -->
   <url>
     <loc>https://chuanggaodoors.cn/zh.html</loc>
     <lastmod>2026-09-17</lastmod>
@@ -17,7 +16,6 @@
     <priority>0.9</priority>
   </url>
 
-  <!-- Portuguese -->
   <url>
     <loc>https://chuanggaodoors.cn/pt.html</loc>
     <lastmod>2026-09-17</lastmod>
@@ -25,7 +23,6 @@
     <priority>0.9</priority>
   </url>
 
-  <!-- Brazilian Portuguese -->
   <url>
     <loc>https://chuanggaodoors.cn/pt-br.html</loc>
     <lastmod>2026-09-17</lastmod>
@@ -33,7 +30,6 @@
     <priority>0.9</priority>
   </url>
 
-  <!-- French -->
   <url>
     <loc>https://chuanggaodoors.cn/fr.html</loc>
     <lastmod>2026-09-17</lastmod>
@@ -41,7 +37,6 @@
     <priority>0.9</priority>
   </url>
 
-  <!-- Arabic -->
   <url>
     <loc>https://chuanggaodoors.cn/ar.html</loc>
     <lastmod>2026-09-17</lastmod>
