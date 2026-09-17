@@ -1,0 +1,1445 @@
+<!DOCTYPE html>
+
+<html dir="ltr" lang="pt">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Jinjiang Doors &amp; Windows · Esquadrias de Alumínio, Portas, Janelas e Sunrooms</title>
+<meta content="Jinjiang Doors &amp; Windows · Esquadrias de Alumínio, Portas, Janelas e Sunrooms. Custom solutions, measurement, design, manufacturing, installation and after-sales service." name="description"/>
+<link crossorigin="" href="https://miaoda.feishu.cn" rel="preconnect"/>
+<link href="https://miaoda.feishu.cn/fonts/css2?family=Noto+Serif+SC:wght@500;600;700;900&amp;family=Noto+Sans+SC:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
+<style>
+/* ============ 基础与变量 ============ */
+:root{
+  --ink:#1c2229;
+  --ink-2:#2a323c;
+  --text:#3c444d;
+  --muted:#7a838d;
+  --paper:#f4f5f6;
+  --white:#ffffff;
+  --line:#e3e6e9;
+  --accent:#b08a4f;
+  --accent-deep:#8f6d38;
+  --accent-soft:#f3ecdd;
+  --serif:"Noto Serif SC","Songti SC","SimSun",serif;
+  --sans:"Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif;
+  --shadow:0 10px 30px rgba(28,34,41,.08);
+  --radius:6px;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:var(--sans);color:var(--text);background:var(--white);line-height:1.7;font-size:16px;-webkit-font-smoothing:antialiased;}
+img{display:block;max-width:100%;}
+a{color:inherit;text-decoration:none;}
+ul{list-style:none;}
+button{font-family:inherit;cursor:pointer;border:none;background:none;}
+.container{max-width:1200px;margin:0 auto;padding:0 24px;}
+::selection{background:var(--accent);color:#fff;}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
+
+/* ============ 排版 ============ */
+.eyebrow{display:flex;align-items:center;gap:12px;font-size:13px;letter-spacing:.35em;color:var(--accent);font-weight:500;}
+.eyebrow::before{content:"";width:32px;height:2px;background:var(--accent);flex:none;}
+.section{padding:96px 0;}
+.section.paper{background:var(--paper);}
+.section-head{margin-bottom:52px;max-width:640px;}
+.section-head h2{font-family:var(--serif);font-weight:700;font-size:clamp(26px,3.4vw,38px);color:var(--ink);line-height:1.35;margin:14px 0 12px;}
+.section-head p{color:var(--muted);font-size:16px;}
+.section-head.center{margin-left:auto;margin-right:auto;text-align:center;}
+.section-head.center .eyebrow{justify-content:center;}
+.section-head.center .eyebrow::after{content:"";width:32px;height:2px;background:var(--accent);flex:none;}
+
+/* ============ 按钮 ============ */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 30px;font-size:15px;font-weight:500;border-radius:var(--radius);transition:all .25s ease;white-space:nowrap;}
+.btn svg{width:17px;height:17px;flex:none;}
+.btn-primary{background:var(--ink);color:#fff;}
+.btn-primary:hover{background:var(--accent);transform:translateY(-2px);}
+.btn-accent{background:var(--accent);color:#fff;}
+.btn-accent:hover{background:var(--accent-deep);transform:translateY(-2px);}
+.btn-ghost{border:1px solid rgba(255,255,255,.55);color:#fff;background:rgba(255,255,255,.08);backdrop-filter:blur(4px);}
+.btn-ghost:hover{background:rgba(255,255,255,.2);transform:translateY(-2px);}
+.btn-line{border:1px solid var(--line);color:var(--ink);background:#fff;}
+.btn-line:hover{border-color:var(--accent);color:var(--accent);}
+
+
+/* ============ Language Switcher ============ */
+.lang-switcher{position:relative;z-index:120;}
+.lang-switcher>button{display:flex;align-items:center;gap:7px;height:40px;padding:0 13px;border:1px solid rgba(255,255,255,.38);border-radius:8px;color:#fff;background:rgba(28,34,41,.22);font-size:13px;font-weight:500;white-space:nowrap;transition:all .25s ease;}
+.lang-switcher>button:hover,.lang-switcher:focus-within>button{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.7);}
+.lang-menu{position:absolute;top:calc(100% + 10px);right:0;min-width:178px;padding:7px;background:#fff;border:1px solid var(--line);border-radius:10px;box-shadow:0 14px 34px rgba(28,34,41,.14);opacity:0;visibility:hidden;transform:translateY(-6px);transition:opacity .2s ease,transform .2s ease,visibility .2s;pointer-events:none;}
+.lang-switcher:hover .lang-menu,.lang-switcher:focus-within .lang-menu{opacity:1;visibility:visible;transform:translateY(0);pointer-events:auto;}
+.lang-menu a{display:flex;align-items:center;min-height:38px;padding:0 12px;border-radius:7px;color:var(--ink)!important;font-size:13px;white-space:nowrap;transition:background .2s,color .2s;}
+.lang-menu a::after{display:none!important;}
+.lang-menu a:hover,.lang-menu a.active{background:var(--paper);color:var(--accent-deep)!important;}
+.site-header.scrolled .lang-switcher>button{color:var(--ink);border-color:var(--line);background:#fff;}
+.site-header.scrolled .lang-switcher>button:hover,.site-header.scrolled .lang-switcher:focus-within>button{border-color:var(--accent);}
+@media(max-width:980px){.nav-right{gap:12px;}.lang-switcher>button{height:38px;padding:0 10px;}.lang-menu{right:0;}}
+@media(max-width:760px){.nav-right{gap:8px;}.lang-switcher{order:1;}.nav-cta{display:none;}.nav-toggle{display:block;order:2;}.lang-switcher>button{font-size:12px;height:36px;padding:0 9px;}.lang-menu{right:-2px;min-width:165px;}}
+
+/* ============ 导航 ============ */
+.site-header{position:fixed;top:0;left:0;right:0;z-index:100;transition:all .3s ease;}
+.site-header.scrolled{background:rgba(255,255,255,.96);box-shadow:0 2px 20px rgba(28,34,41,.08);}
+.site-header.scrolled .nav-links a{color:var(--ink);}
+.site-header.scrolled .nav-links a::after{background:var(--accent);}
+.site-header.scrolled .logo-name{color:var(--ink);}
+.site-header.scrolled .logo-sub{color:var(--muted);}
+.nav-inner{max-width:1240px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:76px;}
+.logo{display:flex;align-items:center;gap:12px;}
+.logo-mark{width:42px;height:42px;border-radius:8px;background:var(--ink);display:flex;align-items:center;justify-content:center;flex:none;}
+.logo-mark svg{width:24px;height:24px;}
+.logo-name{font-family:var(--serif);font-weight:700;font-size:21px;color:#fff;transition:color .3s;letter-spacing:.06em;}
+.logo-sub{display:block;font-size:10px;letter-spacing:.3em;color:rgba(255,255,255,.6);transition:color .3s;font-weight:300;}
+.nav-links{display:flex;align-items:center;gap:38px;}
+.nav-links a{position:relative;font-size:15px;color:rgba(255,255,255,.9);padding:8px 0;transition:color .3s;font-weight:400;}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:2px;background:#fff;transition:width .3s;}
+.nav-links a:hover::after,.nav-links a.active::after{width:100%;}
+.nav-links a.active{color:var(--accent);font-weight:500;}
+.nav-right{display:flex;align-items:center;gap:20px;}
+.nav-cta{background:var(--accent);color:#fff;padding:10px 22px;border-radius:var(--radius);font-size:14px;font-weight:500;transition:background .25s;}
+.nav-cta:hover{background:var(--accent-deep);}
+.nav-toggle{display:none;width:42px;height:42px;border-radius:6px;border:1px solid rgba(255,255,255,.4);position:relative;}
+.nav-toggle span,.nav-toggle span::before,.nav-toggle span::after{content:"";position:absolute;left:11px;width:18px;height:2px;background:#fff;transition:all .3s;}
+.nav-toggle span{top:20px;}
+.nav-toggle span::before{top:-6px;}
+.nav-toggle span::after{top:6px;}
+.nav-toggle.open span{background:transparent;}
+.nav-toggle.open span::before{top:0;transform:rotate(45deg);}
+.nav-toggle.open span::after{top:0;transform:rotate(-45deg);}
+.site-header.scrolled .nav-toggle{border-color:var(--line);}
+.site-header.scrolled .nav-toggle span,.site-header.scrolled .nav-toggle span::before,.site-header.scrolled .nav-toggle span::after{background:var(--ink);}
+
+/* ============ 视图切换 ============ */
+.view{display:none;}
+.view.active{display:block;}
+
+/* ============ 页头横幅 ============ */
+.page-hero{position:relative;padding:180px 0 96px;background:var(--ink);color:#fff;overflow:hidden;}
+.page-hero .ph-bg{position:absolute;inset:0;opacity:.5;}
+.page-hero .ph-bg img{width:100%;height:100%;object-fit:cover;}
+.page-hero::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,rgba(18,22,28,.92) 20%,rgba(18,22,28,.45) 65%,rgba(18,22,28,.25));}
+.page-hero .container{position:relative;z-index:2;}
+.page-hero h1{font-family:var(--serif);font-size:clamp(30px,4.4vw,48px);font-weight:700;margin:16px 0 14px;line-height:1.3;}
+.page-hero p{color:rgba(255,255,255,.75);max-width:560px;font-size:16px;}
+.crumb{font-size:13px;color:rgba(255,255,255,.55);letter-spacing:.1em;}
+.crumb span{color:var(--accent);}
+
+/* ============ Início Hero ============ */
+.hero{position:relative;min-height:100vh;display:flex;align-items:flex-end;color:#fff;overflow:hidden;}
+.hero-bg{position:absolute;inset:0;}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center 30%;}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,19,24,.25) 0%,rgba(15,19,24,.15) 40%,rgba(15,19,24,.85) 100%);}
+.hero-inner{position:relative;z-index:2;width:100%;padding:160px 0 0;}
+.hero-content{max-width:700px;padding:56px 0 64px;}
+.hero-content .eyebrow{color:#d8b878;}
+.hero-content .eyebrow::before{background:#d8b878;}
+.hero h1{font-family:var(--serif);font-weight:900;font-size:clamp(34px,5.6vw,60px);line-height:1.22;margin:20px 0 20px;letter-spacing:.02em;}
+.hero h1 em{font-style:normal;color:#d8b878;}
+.hero-sub{font-size:17px;color:rgba(255,255,255,.85);max-width:520px;font-weight:300;margin-bottom:36px;}
+.hero-ctas{display:flex;gap:16px;flex-wrap:wrap;}
+.hero-stats{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid rgba(255,255,255,.22);padding:34px 0 44px;margin-top:64px;}
+.hstat .num{font-family:var(--serif);font-weight:700;font-size:clamp(28px,3.6vw,42px);color:#fff;line-height:1.2;}
+.hstat .num i{font-style:normal;color:#d8b878;font-size:.6em;margin-left:2px;}
+.hstat .lbl{font-size:13px;color:rgba(255,255,255,.6);margin-top:4px;letter-spacing:.12em;}
+
+/* ============ Início产品精选 ============ */
+.home-prods{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;}
+.hp-card{position:relative;border-radius:var(--radius);overflow:hidden;aspect-ratio:4/4.6;background:var(--ink);}
+.hp-card img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease;}
+.hp-card:hover img{transform:scale(1.06);}
+.hp-card .hp-mask{position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,19,24,0) 40%,rgba(15,19,24,.88) 100%);display:flex;flex-direction:column;justify-content:flex-end;padding:26px 24px;}
+.hp-card .hp-tag{font-size:12px;color:#d8b878;letter-spacing:.3em;margin-bottom:6px;}
+.hp-card h3{font-family:var(--serif);font-size:22px;color:#fff;font-weight:600;}
+.hp-card p{font-size:13px;color:rgba(255,255,255,.7);margin-top:6px;line-height:1.6;}
+.hp-card .hp-more{display:inline-flex;align-items:center;gap:6px;margin-top:14px;font-size:13px;color:#d8b878;opacity:0;transform:translateY(6px);transition:all .35s;}
+.hp-card:hover .hp-more{opacity:1;transform:none;}
+.hp-more svg{width:14px;height:14px;}
+
+/* ============ 优势 ============ */
+.feats{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;}
+.feat{border:1px solid var(--line);border-radius:var(--radius);padding:34px 28px;background:#fff;transition:all .3s ease;}
+.feat:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:transparent;}
+.feat-icon{width:56px;height:56px;border-radius:12px;background:var(--accent-soft);display:flex;align-items:center;justify-content:center;margin-bottom:20px;}
+.feat-icon svg{width:28px;height:28px;stroke:var(--accent-deep);}
+.feat h3{font-family:var(--serif);font-size:19px;color:var(--ink);font-weight:600;margin-bottom:10px;}
+.feat p{font-size:14px;color:var(--muted);line-height:1.75;}
+
+/* ============ Serviço流程(Início横向步骤) ============ */
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:0;counter-reset:step;}
+.step{position:relative;padding:0 26px;}
+.step:not(:last-child)::after{content:"";position:absolute;top:26px;right:-2px;width:calc(100% - 56px);height:1px;background:var(--line);z-index:0;}
+.step-num{width:52px;height:52px;border-radius:50%;background:var(--ink);color:#d8b878;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:18px;font-weight:700;margin-bottom:20px;position:relative;z-index:1;border:5px solid #fff;box-shadow:0 0 0 1px var(--line);}
+.step h3{font-size:16px;color:var(--ink);font-weight:600;margin-bottom:8px;}
+.step p{font-size:13px;color:var(--muted);line-height:1.7;}
+
+/* ============ 客户口碑 ============ */
+.quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+.quote{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:34px 30px;position:relative;}
+.quote::before{content:"“";position:absolute;top:6px;right:22px;font-family:var(--serif);font-size:88px;color:var(--accent-soft);line-height:1;}
+.quote p{font-size:14.5px;color:var(--text);line-height:1.85;margin-bottom:22px;position:relative;z-index:1;}
+.quote .q-who{display:flex;align-items:center;gap:12px;}
+.quote .q-ava{width:42px;height:42px;border-radius:50%;background:var(--ink);color:#d8b878;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:16px;font-weight:700;flex:none;}
+.quote .q-name{font-size:14px;color:var(--ink);font-weight:500;}
+.quote .q-proj{font-size:12px;color:var(--muted);}
+
+/* ============ CTA 横幅 ============ */
+.cta-band{background:var(--ink);color:#fff;padding:72px 0;position:relative;overflow:hidden;}
+.cta-band::before{content:"";position:absolute;width:420px;height:420px;border-radius:50%;border:1px solid rgba(216,184,120,.25);right:-120px;top:-160px;}
+.cta-band::after{content:"";position:absolute;width:620px;height:620px;border-radius:50%;border:1px solid rgba(216,184,120,.12);right:-80px;top:-230px;}
+.cta-inner{position:relative;z-index:1;display:flex;align-items:center;justify-content:space-between;gap:40px;flex-wrap:wrap;}
+.cta-inner h2{font-family:var(--serif);font-size:clamp(24px,3.2vw,34px);font-weight:700;margin-bottom:10px;}
+.cta-inner p{color:rgba(255,255,255,.65);font-size:15px;}
+.cta-actions{display:flex;gap:14px;flex-wrap:wrap;}
+
+/* ============ 产品页 ============ */
+.filters{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:44px;}
+.fbtn{padding:10px 24px;border:1px solid var(--line);border-radius:40px;font-size:14px;color:var(--text);background:#fff;transition:all .25s;}
+.fbtn:hover{border-color:var(--accent);color:var(--accent);}
+.fbtn.active{background:var(--ink);color:#fff;border-color:var(--ink);}
+.prod-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;}
+.pcard{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column;transition:all .3s ease;}
+.pcard:hover{box-shadow:var(--shadow);transform:translateY(-4px);}
+.pcard-media{position:relative;aspect-ratio:4/3;overflow:hidden;}
+.pcard-media img{width:100%;height:100%;object-fit:cover;transition:transform .6s;}
+.pcard:hover .pcard-media img{transform:scale(1.05);}
+.pcard-tag{position:absolute;left:16px;top:16px;background:rgba(28,34,41,.82);color:#d8b878;font-size:12px;letter-spacing:.2em;padding:5px 14px;border-radius:40px;backdrop-filter:blur(4px);}
+.pcard-body{padding:26px 26px 24px;display:flex;flex-direction:column;flex:1;}
+.pcard-body h3{font-family:var(--serif);font-size:21px;color:var(--ink);font-weight:600;margin-bottom:10px;}
+.pcard-body>p{font-size:14px;color:var(--muted);line-height:1.75;margin-bottom:18px;}
+.pcard-specs{display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:1px solid var(--line);margin-top:auto;}
+.spec{display:flex;flex-direction:column;gap:2px;padding:12px 14px;border-bottom:1px solid var(--line);}
+.spec:nth-child(odd){border-right:1px solid var(--line);}
+.spec .k{font-size:11px;color:var(--muted);letter-spacing:.1em;}
+.spec .v{font-size:13px;color:var(--ink);font-weight:500;}
+.pcard-foot{display:flex;align-items:center;justify-content:space-between;padding:16px 26px;border-top:1px solid var(--line);background:var(--paper);}
+.pcard-foot .price{font-family:var(--serif);font-size:15px;color:var(--accent-deep);font-weight:600;}
+.pcard-foot .more{font-size:13px;color:var(--ink);display:inline-flex;align-items:center;gap:6px;}
+.pcard-foot .more svg{width:14px;height:14px;transition:transform .25s;}
+.pcard-foot .more:hover{color:var(--accent);}
+.pcard-foot .more:hover svg{transform:translateX(4px);}
+.quote-note{text-align:center;font-size:13px;color:var(--muted);margin-top:40px;}
+.quote-note a{color:var(--accent);text-decoration:underline;}
+
+/* ============ Sobre Nós ============ */
+.about-intro{display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:center;}
+.about-intro .ai-media{border-radius:var(--radius);overflow:hidden;position:relative;}
+.about-intro .ai-media img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/3;}
+.about-intro .ai-badge{position:absolute;left:-18px;bottom:28px;background:var(--accent);color:#fff;padding:16px 22px;border-radius:var(--radius);box-shadow:var(--shadow);}
+.about-intro .ai-badge strong{font-family:var(--serif);font-size:30px;display:block;line-height:1.2;}
+.about-intro .ai-badge span{font-size:12px;opacity:.9;letter-spacing:.15em;}
+.about-intro h2{font-family:var(--serif);font-size:clamp(24px,3vw,32px);color:var(--ink);font-weight:700;line-height:1.45;margin:14px 0 18px;}
+.about-intro p{color:var(--muted);font-size:15px;margin-bottom:16px;line-height:1.9;}
+.about-intro .p-points{margin:22px 0 30px;display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+.about-intro .p-points li{display:flex;align-items:center;gap:10px;font-size:14px;color:var(--ink);font-weight:500;}
+.about-intro .p-points svg{width:18px;height:18px;stroke:var(--accent-deep);flex:none;}
+.stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin:80px 0;border-radius:var(--radius);overflow:hidden;}
+.srow{background:#fff;padding:36px 24px;text-align:center;}
+.srow .num{font-family:var(--serif);font-size:38px;font-weight:700;color:var(--ink);line-height:1.2;}
+.srow .num i{font-style:normal;color:var(--accent);font-size:.6em;}
+.srow .lbl{font-size:13px;color:var(--muted);margin-top:6px;letter-spacing:.15em;}
+
+/* 时间轴 */
+.tl{display:grid;grid-template-columns:110px 64px 1fr;row-gap:0;}
+.tl-item{display:contents;}
+.tl-time{padding:26px 0;text-align:right;font-family:var(--serif);font-weight:700;font-size:17px;color:var(--accent-deep);}
+.tl-axis{position:relative;display:flex;justify-content:center;}
+.tl-axis::before{content:"";position:absolute;top:0;bottom:0;left:50%;transform:translateX(-50%);width:2px;background:var(--line);}
+.tl-dot{width:14px;height:14px;border-radius:50%;background:#fff;border:3px solid var(--accent);position:relative;z-index:1;align-self:center;box-shadow:0 0 0 4px var(--accent-soft);}
+.tl-body{padding:22px 0 22px 34px;}
+.tl-body h3{font-family:var(--serif);font-size:19px;color:var(--ink);font-weight:600;margin-bottom:6px;}
+.tl-body p{font-size:14px;color:var(--muted);line-height:1.75;}
+
+/* 价值观 */
+.vals{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;}
+.val{border:1px solid var(--line);border-radius:var(--radius);padding:34px 26px;background:#fff;position:relative;overflow:hidden;transition:all .3s;}
+.val:hover{transform:translateY(-4px);box-shadow:var(--shadow);}
+.val .v-idx{font-family:var(--serif);font-size:44px;font-weight:900;color:var(--accent-soft);line-height:1;margin-bottom:18px;}
+.val h3{font-size:18px;color:var(--ink);font-weight:600;margin-bottom:10px;}
+.val p{font-size:13.5px;color:var(--muted);line-height:1.8;}
+
+/* 认证 */
+.certs{display:grid;grid-template-columns:1fr 1.2fr;gap:40px;align-items:center;}
+.certs-media{border-radius:var(--radius);overflow:hidden;}
+.certs-media img{width:100%;object-fit:cover;aspect-ratio:4/3;}
+.cert-list{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
+.cert{display:flex;align-items:center;gap:14px;border:1px solid var(--line);border-radius:var(--radius);padding:20px;}
+.cert-icon{width:46px;height:46px;border-radius:10px;background:var(--accent-soft);display:flex;align-items:center;justify-content:center;flex:none;}
+.cert-icon svg{width:24px;height:24px;stroke:var(--accent-deep);}
+.cert strong{display:block;font-size:15px;color:var(--ink);}
+.cert span{font-size:12.5px;color:var(--muted);}
+
+/* ============ Serviços ============ */
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+.svc{border:1px solid var(--line);border-radius:var(--radius);padding:36px 30px;background:#fff;transition:all .3s;position:relative;}
+.svc:hover{transform:translateY(-4px);box-shadow:var(--shadow);}
+.svc-icon{width:60px;height:60px;border-radius:14px;background:var(--ink);display:flex;align-items:center;justify-content:center;margin-bottom:22px;}
+.svc-icon svg{width:30px;height:30px;stroke:#d8b878;}
+.svc h3{font-size:19px;color:var(--ink);font-weight:600;margin-bottom:10px;}
+.svc p{font-size:14px;color:var(--muted);line-height:1.8;}
+.svc .svc-num{position:absolute;top:28px;right:28px;font-family:var(--serif);font-size:34px;font-weight:900;color:var(--accent-soft);}
+
+/* 流程竖向 */
+.svc-flow{display:grid;grid-template-columns:120px 60px 1fr;row-gap:0;}
+.svc-item{display:contents;}
+.svc-axis{position:relative;display:flex;justify-content:center;}
+.svc-axis::before{content:"";position:absolute;top:0;bottom:0;left:50%;transform:translateX(-50%);width:2px;background:var(--line);}
+.svc-n{width:44px;height:44px;border-radius:50%;background:var(--ink);color:#d8b878;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-weight:700;font-size:16px;align-self:center;position:relative;z-index:1;box-shadow:0 0 0 6px #fff;border:1px solid var(--line);}
+.svc-body{padding:20px 0 20px 34px;}
+.svc-body h3{font-family:var(--serif);font-size:19px;color:var(--ink);font-weight:600;margin-bottom:8px;}
+.svc-body p{font-size:14px;color:var(--muted);line-height:1.8;}
+
+/* 质保表 */
+.warranty{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;width:100%;border-collapse:collapse;background:#fff;}
+.warranty th,.warranty td{padding:16px 24px;text-align:left;font-size:14.5px;}
+.warranty thead th{background:var(--ink);color:#fff;font-weight:500;letter-spacing:.1em;}
+.warranty tbody tr{border-top:1px solid var(--line);}
+.warranty tbody tr:hover{background:var(--paper);}
+.warranty td:first-child{color:var(--ink);font-weight:500;}
+.warranty td:last-child{color:var(--accent-deep);font-weight:600;}
+
+/* FAQ */
+.faq{max-width:840px;margin:0 auto;}
+.faq-item{border:1px solid var(--line);border-radius:var(--radius);margin-bottom:14px;background:#fff;overflow:hidden;}
+.faq-q{width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:20px 24px;font-size:15.5px;color:var(--ink);font-weight:500;text-align:left;}
+.faq-q .faq-ic{width:28px;height:28px;border-radius:50%;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;flex:none;transition:all .3s;}
+.faq-q .faq-ic svg{width:14px;height:14px;stroke:var(--ink);transition:transform .3s;}
+.faq-item.open .faq-q .faq-ic{background:var(--accent);border-color:var(--accent);}
+.faq-item.open .faq-q .faq-ic svg{stroke:#fff;transform:rotate(45deg);}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .4s ease;}
+.faq-a p{padding:0 24px 22px;font-size:14px;color:var(--muted);line-height:1.85;}
+
+/* ============ Contacte-nos ============ */
+.contact-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:44px;align-items:start;}
+.cinfo{display:grid;gap:16px;}
+.cinfo-card{display:flex;gap:18px;border:1px solid var(--line);border-radius:var(--radius);padding:24px;background:#fff;align-items:flex-start;transition:all .3s;}
+.cinfo-card:hover{box-shadow:var(--shadow);transform:translateY(-2px);}
+.cinfo-icon{width:50px;height:50px;border-radius:12px;background:var(--accent-soft);display:flex;align-items:center;justify-content:center;flex:none;}
+.cinfo-icon svg{width:24px;height:24px;stroke:var(--accent-deep);}
+.cinfo-card h3{font-size:15px;color:var(--ink);font-weight:600;margin-bottom:4px;}
+.cinfo-card p{font-size:14px;color:var(--muted);line-height:1.7;}
+.cinfo-card a{color:var(--accent-deep);font-weight:500;}
+.cinfo-card a:hover{text-decoration:underline;}
+.cform{border:1px solid var(--line);border-radius:var(--radius);padding:40px;background:#fff;box-shadow:var(--shadow);}
+.cform h3{font-family:var(--serif);font-size:24px;color:var(--ink);font-weight:700;margin-bottom:6px;}
+.cform>p{font-size:14px;color:var(--muted);margin-bottom:26px;}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
+.form-grid .full{grid-column:1/-1;}
+.f-field label{display:block;font-size:13px;color:var(--ink);font-weight:500;margin-bottom:8px;}
+.f-field label em{color:var(--accent);font-style:normal;}
+.f-field input,.f-field select,.f-field textarea{width:100%;padding:13px 16px;border:1px solid var(--line);border-radius:var(--radius);font-family:inherit;font-size:14.5px;color:var(--ink);background:#fbfcfc;transition:border-color .25s,box-shadow .25s;}
+.f-field input:focus,.f-field select:focus,.f-field textarea:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px rgba(176,138,79,.15);background:#fff;}
+.f-field textarea{resize:vertical;min-height:110px;}
+.cform .btn{width:100%;margin-top:22px;}
+.form-note{font-size:12px;color:var(--muted);margin-top:12px;text-align:center;}
+.form-ok{display:none;align-items:center;gap:12px;background:#f0f7f1;border:1px solid #cfe5d2;color:#2f6b3a;border-radius:var(--radius);padding:16px 18px;font-size:14px;margin-top:20px;}
+.form-ok.show{display:flex;}
+.form-ok svg{width:20px;height:20px;flex:none;}
+.map-band{margin-top:60px;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);position:relative;background:var(--paper);}
+.map-band .mb-map{height:320px;position:relative;background:linear-gradient(135deg,#eef0f2 0%,#e2e6ea 100%);}
+.map-band .mb-map svg.grid{position:absolute;inset:0;width:100%;height:100%;opacity:.5;}
+.map-pin{position:absolute;left:50%;top:46%;transform:translate(-50%,-100%);text-align:center;}
+.map-pin .pin{width:46px;height:46px;margin:0 auto;background:var(--accent);border-radius:50% 50% 50% 0;transform:rotate(-45deg);display:flex;align-items:center;justify-content:center;box-shadow:0 8px 20px rgba(176,138,79,.4);}
+.map-pin .pin svg{transform:rotate(45deg);width:22px;height:22px;stroke:#fff;}
+.map-pin .pin::after{content:"";position:absolute;width:14px;height:14px;background:#fff;border-radius:50%;}
+.map-label{position:absolute;left:50%;top:58%;transform:translateX(-50%);background:#fff;border-radius:40px;padding:10px 22px;font-size:13px;color:var(--ink);box-shadow:var(--shadow);white-space:nowrap;border:1px solid var(--line);}
+.map-addr{position:absolute;right:20px;bottom:20px;background:rgba(28,34,41,.88);color:#fff;padding:14px 20px;border-radius:var(--radius);font-size:13px;line-height:1.8;backdrop-filter:blur(4px);}
+.map-addr strong{color:#d8b878;display:block;font-size:14px;margin-bottom:2px;}
+
+/* ============ 页脚 ============ */
+.site-footer{background:var(--ink);color:rgba(255,255,255,.7);padding:72px 0 0;font-size:14px;}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:48px;padding-bottom:52px;}
+.footer-brand .logo-name{color:#fff;}
+.footer-brand .logo-sub{color:rgba(255,255,255,.5);}
+.footer-brand p{margin-top:20px;line-height:1.9;font-size:13.5px;color:rgba(255,255,255,.55);}
+.footer h4{color:#fff;font-size:15px;font-weight:600;margin-bottom:20px;letter-spacing:.1em;}
+.footer-links li{margin-bottom:12px;}
+.footer-links a{color:rgba(255,255,255,.6);transition:color .25s;font-size:14px;}
+.footer-links a:hover{color:#d8b878;}
+.footer-contact li{display:flex;gap:10px;margin-bottom:14px;line-height:1.7;}
+.footer-contact svg{width:17px;height:17px;stroke:#d8b878;flex:none;margin-top:4px;}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.12);padding:22px 0;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:12.5px;color:rgba(255,255,255,.4);}
+
+/* ============ 揭示动画 ============ */
+.rv{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease;}
+.rv.in{opacity:1;transform:none;}
+@media (prefers-reduced-motion:reduce){
+  .rv{opacity:1;transform:none;transition:none;}
+  html{scroll-behavior:auto;}
+  .hp-card img,.pcard-media img{transition:none;}
+}
+/* ============ 响应式 ============ */
+@media (max-width:1024px){
+  .home-prods{grid-template-columns:repeat(2,1fr);}
+  .feats{grid-template-columns:repeat(2,1fr);}
+  .prod-grid{grid-template-columns:repeat(2,1fr);}
+  .vals{grid-template-columns:repeat(2,1fr);}
+  .svc-grid{grid-template-columns:repeat(2,1fr);}
+  .certs{grid-template-columns:1fr;}
+  .contact-grid{grid-template-columns:1fr;}
+  .about-intro{grid-template-columns:1fr;gap:36px;}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:36px;}
+  .steps{grid-template-columns:repeat(5,1fr);gap:16px;}
+  .step{padding:0 10px;}
+  .step:not(:last-child)::after{width:calc(100% - 32px);}
+  .hero-stats{grid-template-columns:repeat(2,1fr);gap:24px;}
+}
+@media (max-width:768px){
+  .section{padding:64px 0;}
+  .nav-toggle{display:block;width:44px;height:44px;}
+  .nav-toggle span{left:12px;width:20px;top:21px;}
+  .nav-toggle span::before{top:-6px;}
+  .nav-toggle span::after{top:6px;}
+  .f-field input,.f-field select,.f-field textarea{font-size:16px;}
+  .hp-card p,.step p,.svc p,.feat p,.quote p,.pcard-body>p,.fbtn{font-size:14px;}
+  .nav-links{position:fixed;top:76px;left:0;right:0;background:#fff;flex-direction:column;align-items:flex-start;gap:0;padding:0 24px;max-height:0;overflow:hidden;transition:max-height .4s ease;box-shadow:0 16px 30px rgba(28,34,41,.1);}
+  .nav-links.open{max-height:440px;padding:12px 24px 20px;}
+  .nav-links a{color:var(--ink);width:100%;padding:14px 0;border-bottom:1px solid var(--line);font-size:16px;}
+  .nav-links a.active{color:var(--accent);}
+  .nav-links a::after{display:none;}
+  .nav-right .nav-cta{display:none;}
+  .page-hero{padding:140px 0 64px;}
+  .hero{min-height:88vh;}
+  .quotes{grid-template-columns:1fr;}
+  .steps{grid-template-columns:1fr;gap:26px;max-width:420px;margin:0 auto;}
+  .step{display:flex;gap:20px;align-items:flex-start;padding:0;text-align:left;}
+  .step-num{margin-bottom:0;flex:none;border:4px solid #fff;}
+  .step:not(:last-child)::after{display:none;}
+  .about-intro .p-points{grid-template-columns:1fr;}
+  .tl{grid-template-columns:70px 40px 1fr;}
+  .svc-flow{grid-template-columns:70px 40px 1fr;}
+  .stats-row{grid-template-columns:repeat(2,1fr);}
+  .form-grid{grid-template-columns:1fr;}
+  .cform{padding:28px 22px;}
+  .cta-inner{flex-direction:column;align-items:flex-start;}
+  .map-label{font-size:11px;padding:8px 14px;}
+  .map-addr{display:none;}
+}
+@media (max-width:520px){
+  .home-prods,.feats,.vals,.svc-grid{grid-template-columns:1fr;}
+  .prod-grid{grid-template-columns:1fr;}
+  .footer-grid{grid-template-columns:1fr;}
+  .hero-ctas .btn{width:100%;}
+  .hero-stats{grid-template-columns:1fr 1fr;}
+  .footer-bottom{flex-direction:column;}
+}
+</style>
+<link href="/zh/" hreflang="zh-CN" rel="alternate"/>
+<link href="/en/" hreflang="en" rel="alternate"/>
+<link href="/pt/" hreflang="pt-PT" rel="alternate">
+<link href="/pt-br/" hreflang="pt-BR" rel="alternate">
+<link href="/fr/" hreflang="fr" rel="alternate"/>
+<link href="/ar/" hreflang="ar" rel="alternate"/>
+<link href="/en/" hreflang="x-default" rel="alternate"/>
+</link></link>
+<style id="responsive-enhancements">
+/* Responsive enhancements: preserve the existing visual layout while adapting spacing and columns */
+html,body{max-width:100%;overflow-x:hidden;}
+img,svg,video,iframe{max-width:100%;}
+*,*::before,*::after{box-sizing:border-box;}
+.container,.nav-inner{width:100%;}
+
+@media (max-width:1024px){
+  .nav-inner{padding-left:20px;padding-right:20px;}
+  .nav-links{gap:24px;}
+  .nav-right{gap:12px;}
+  .section-inner,.container{padding-left:20px;padding-right:20px;}
+  .hero-inner{padding-left:20px;padding-right:20px;}
+}
+
+@media (max-width:768px){
+  body{font-size:16px;}
+  .nav-inner{height:76px;padding-left:16px;padding-right:16px;}
+  .logo{min-width:0;}
+  .logo-name{font-size:18px;white-space:nowrap;}
+  .logo-sub{font-size:8px;letter-spacing:.2em;white-space:nowrap;}
+  .nav-right{margin-left:auto;flex:0 0 auto;gap:8px;}
+  .lang-switcher{flex:0 0 auto;}
+  .lang-switcher>button{max-width:140px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .nav-links{overflow-y:auto;-webkit-overflow-scrolling:touch;}
+  .nav-links a{white-space:normal;}
+  .section-inner,.container,.hero-inner{padding-left:16px;padding-right:16px;}
+  .page-hero h1,.hero h1{overflow-wrap:anywhere;}
+  .hero-copy,.page-hero-copy{max-width:100%;}
+  .hero-ctas{flex-wrap:wrap;}
+  .hero-ctas .btn{min-width:0;}
+  .stats-row,.hero-stats{width:100%;}
+  .card,.hp-card,.pcard,.quote,.svc-card,.feat,.val{min-width:0;}
+  .pcard-body,.hp-card,.quote,.svc-card,.feat,.val{overflow-wrap:anywhere;}
+  .f-field input,.f-field select,.f-field textarea{width:100%;max-width:100%;}
+  .contact-info,.contact-form,.cform{min-width:0;}
+  .footer-grid>div{min-width:0;}
+  .footer-bottom{gap:12px;}
+}
+
+@media (max-width:520px){
+  .nav-inner{padding-left:12px;padding-right:12px;}
+  .logo{gap:8px;}
+  .logo-mark{width:38px;height:38px;}
+  .logo-mark svg{width:21px;height:21px;}
+  .logo-name{font-size:16px;letter-spacing:.03em;}
+  .logo-sub{display:none;}
+  .nav-right{gap:6px;}
+  .lang-switcher>button{height:36px!important;padding:0 8px!important;font-size:11px!important;max-width:118px;}
+  .nav-toggle{width:40px!important;height:40px!important;}
+  .section-inner,.container,.hero-inner{padding-left:12px;padding-right:12px;}
+  .hero-ctas .btn{width:100%;}
+  .form-grid{grid-template-columns:1fr!important;}
+  .footer-grid{gap:28px;}
+  .footer-bottom{align-items:flex-start;}
+  .page-hero{padding-left:0;padding-right:0;}
+}
+
+@media (max-width:380px){
+  .logo-name{font-size:15px;}
+  .lang-switcher>button{max-width:102px;font-size:10px!important;}
+  .nav-toggle{width:38px!important;height:38px!important;}
+  .nav-toggle span{left:10px;}
+}
+
+/* Prevent decorative absolute elements from creating mobile horizontal overflow */
+@media (max-width:768px){
+  [style*="width:420px"],[style*="width:620px"]{max-width:calc(100vw - 24px);}
+}
+
+/* Arabic RTL: keep the same visual hierarchy while making mobile navigation natural */
+html[dir="rtl"] .nav-links{align-items:flex-start;}
+html[dir="rtl"] .nav-links a{text-align:right;}
+html[dir="rtl"] .lang-menu{right:auto;left:0;}
+html[dir="rtl"] .nav-toggle span{left:auto;right:11px;}
+@media (max-width:768px){
+  html[dir="rtl"] .nav-links{align-items:stretch;}
+  html[dir="rtl"] .nav-links a{text-align:right;}
+}
+</style>
+
+</head>
+<body>
+<!-- ================= 导航 ================= -->
+<header class="site-header" id="siteHeader">
+<div class="nav-inner">
+<a aria-label="Jinjiang Portas e JanelasInício" class="logo" data-nav="home" href="#home">
+<span class="logo-mark">
+<svg fill="none" stroke="#d8b878" stroke-width="1.8" viewbox="0 0 24 24"><rect height="18" rx="2" width="18" x="3" y="3"></rect><path d="M3 10h18M10 3v18M7 10l3 3 3-3"></path><path d="M7 17h4"></path></svg>
+</span>
+<span>
+<span class="logo-name">Jinjiang Portas e Janelas</span>
+<span class="logo-sub">jinjiang DOORS &amp; WINDOWS</span>
+</span>
+</a>
+<nav aria-label="Navegação principal" class="nav-links" id="navLinks">
+<a data-nav="home" href="#home">Início</a>
+<a data-nav="product" href="#product">Produtos</a>
+<a data-nav="about" href="#about">Sobre Nós</a>
+<a data-nav="service" href="#service">Serviços</a>
+<a data-nav="contact" href="#contact">Contato</a>
+</nav>
+<div class="nav-right">
+<div aria-label="Language selector" class="lang-switcher"><button type="button">🌐 Português ▾</button><div class="lang-menu"><a href="../zh/index.html" lang="zh-CN">中文</a><a href="../en/index.html" lang="en">English</a><a class="active" href="../pt/index.html" lang="pt">Português</a><a href="../pt-br/index.html" lang="pt-BR">Português (Brasil)</a><a href="../fr/index.html" lang="fr">Français</a><a href="../ar/index.html" lang="ar">العربية</a></div></div>
+<a class="nav-cta" data-nav="contact" href="#contact">Agendar Medição Gratuita</a>
+<button aria-label="Open menu" class="nav-toggle" id="navToggle"><span></span></button>
+</div>
+</div>
+</header>
+<main>
+<!-- ================= 视图：Início ================= -->
+<section class="view active" data-view="home" id="view-home">
+<div class="hero">
+<div class="hero-bg"><img alt="Moradia moderna com portas e janelas de vidro de altura total" loading="lazy" src="../assets/hero.jpg"/></div>
+<div class="hero-inner">
+<div class="container">
+<div class="hero-content">
+<p class="eyebrow rv">jinjiang Jinjiang Portas e Janelas · 15 anos de experiência dedicada em portas e janelas 15 anos</p>
+<h1 class="rv">Uma boa porta ou janela<br/>Desfrute de<em>uma vida melhor</em></h1>
+<p class="hero-sub rv">Sistemas de portas e janelas · Alumínio com corte térmico · Portas de correr · Marquises · Fachadas de vidro — da medição gratuita à assistência vitalícia, soluções personalizadas para o seu conforto e tranquilidade.</p>
+<div class="hero-ctas rv">
+<a class="btn btn-accent" data-nav="product" href="#product">Ver produtos
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+</a>
+<a class="btn btn-ghost" data-nav="contact" href="#contact">Agendar Medição Gratuita</a>
+</div>
+</div>
+<div class="hero-stats rv">
+<div class="hstat"><div class="num"><span class="counter" data-count="15">0</span><i>anos</i></div><div class="lbl">Anos de experiência no setor</div></div>
+<div class="hstat"><div class="num"><span class="counter" data-count="20000">0</span><i>+</i></div><div class="lbl">Famílias atendidas</div></div>
+<div class="hstat"><div class="num"><span class="counter" data-count="300">0</span><i>+</i></div><div class="lbl">Empreendimentos atendidos</div></div>
+<div class="hstat"><div class="num"><span class="counter" data-count="10">0</span><i>anos</i></div><div class="lbl">Compromisso de garantia</div></div>
+</div>
+</div>
+</div>
+</div>
+<section class="section">
+<div class="container">
+<div class="section-head center rv">
+<p class="eyebrow">PRODUCT SERIES</p>
+<h2>Linhas de Produtos em Destaque</h2>
+<p>Dos perfis e vidros às ferragens e ao processo de fabrico, cada porta e janela passa por um rigoroso controlo de qualidade e adapta-se a diferentes espaços e estilos.</p>
+</div>
+<div class="home-prods">
+<a class="hp-card rv" data-nav="product" href="#product">
+<img alt="Sistemas de portas e janelas com grandes áreas envidraçadas numa sala" loading="lazy" src="../assets/product-system.jpg"/>
+<div class="hp-mask">
+<span class="hp-tag">SYSTEM WINDOW</span>
+<h3>Janelas e Portas de Sistema</h3>
+<p>Caixilhos finos · Alto desempenho · Vedação integrada</p>
+<span class="hp-more">Ver Detalhes <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
+</div>
+</a>
+<a class="hp-card rv" data-nav="product" href="#product">
+<img alt="Close-up de janela de batente em alumínio com corte térmico" loading="lazy" src="../assets/product-casement.jpg"/>
+<div class="hp-mask">
+<span class="hp-tag">CASEMENT</span>
+<h3>Janelas de Alumínio com Corte Térmico</h3>
+<p>Eficiência térmica · Isolamento acústico · Segurança</p>
+<span class="hp-more">Ver Detalhes <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
+</div>
+</a>
+<a class="hp-card rv" data-nav="product" href="#product">
+<img alt="Grandes portas de correr ligando a varanda ao jardim" loading="lazy" src="../assets/product-sliding.jpg"/>
+<div class="hp-mask">
+<span class="hp-tag">SLIDING DOOR</span>
+<h3>Portas de Correr</h3>
+<p>Perfis ultrafinos · Suave e silencioso · Vista ampla</p>
+<span class="hp-more">Ver Detalhes <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
+</div>
+</a>
+<a class="hp-card rv" data-nav="product" href="#product">
+<img alt="Marquise com espaço de lazer confortável" loading="lazy" src="../assets/product-sunroom.jpg"/>
+<div class="hp-mask">
+<span class="hp-tag">SUNROOM</span>
+<h3>Sunrooms</h3>
+<p>Design personalizado · Isolamento térmico e proteção contra infiltrações · Para todas as estações</p>
+<span class="hp-more">Ver Detalhes <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
+</div>
+</a>
+</div>
+</div>
+</section>
+<section class="section paper">
+<div class="container">
+<div class="section-head center rv">
+<p class="eyebrow">WHY jinjiang</p>
+<h2>Por que escolher a Jinjiang</h2>
+<p>São os detalhes que não se veem que tornam portas e janelas fiáveis durante anos. Quatro garantias essenciais protegem o conforto e a tranquilidade de cada casa.</p>
+</div>
+<div class="feats">
+<div class="feat rv">
+<div class="feat-icon"><svg fill="none" stroke-width="1.6" viewbox="0 0 24 24"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"></path><circle cx="12" cy="12" r="4"></circle></svg></div>
+<h3>Eficiência térmica</h3>
+<p>Perfis de alumínio com corte térmico e múltiplas câmaras + vidro duplo Low-E ajudam a manter o calor no inverno e a bloquear o calor no verão, reduzindo os custos anuais de climatização.</p>
+</div>
+<div class="feat rv">
+<div class="feat-icon"><svg fill="none" stroke-width="1.6" viewbox="0 0 24 24"><path d="M12 4a8 8 0 0 0-8 8v5a2 2 0 0 0 2 2h2v-6H5.5M12 4a8 8 0 0 1 8 8v5a2 2 0 0 1-2 2h-2v-6h3.5"></path><path d="M17 19a5 5 0 0 1-10 0"></path></svg></div>
+<h3>Isolamento acústico</h3>
+<p>A combinação de três níveis de vedação com vidro isolante reduz significativamente o ruído exterior, proporcionando mais silêncio mesmo junto a ruas movimentadas.</p>
+</div>
+<div class="feat rv">
+<div class="feat-icon"><svg fill="none" stroke-width="1.6" viewbox="0 0 24 24"><circle cx="12" cy="8" r="4"></circle><path d="M5.5 21a6.5 6.5 0 0 1 13 0"></path><path d="M18 4l1.5 1.5L21 4"></path></svg></div>
+<h3>Ferragens premium</h3>
+<p>Ferragens com fecho multiponto garantem um funcionamento suave e elevada resistência à intrusão, mantendo a operação fluida após mais de 100.000 ciclos.</p>
+</div>
+<div class="feat rv">
+<div class="feat-icon"><svg fill="none" stroke-width="1.6" viewbox="0 0 24 24"><path d="M12 2l8 3v6c0 5-3.5 8.5-8 11-4.5-2.5-8-6-8-11V5l8-3z"></path><path d="M8.5 12l2.5 2.5 4.5-5"></path></svg></div>
+<h3>Fabricação rigorosa</h3>
+<p>Produção padronizada com selagem dos cantos, união reforçada e teste individual de estanquidade e funcionamento antes da expedição.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="container">
+<div class="section-head center rv">
+<p class="eyebrow">HOW IT WORKS</p>
+<h2>5 passos para renovar portas e janelas</h2>
+<p>Desde o primeiro contacto até à inspeção final da instalação, um consultor acompanha cada etapa para uma experiência simples e sem surpresas.</p>
+</div>
+<div class="steps">
+<div class="step rv"><div class="step-num">01</div><h3>Consulta</h3><p>Marcação por telefone ou online; um consultor avalia as suas necessidades</p></div>
+<div class="step rv"><div class="step-num">02</div><h3>Medição Gratuita</h3><p>Medição precisa no local por um técnico, com plano de dimensões</p></div>
+<div class="step rv"><div class="step-num">03</div><h3>Orçamento</h3><p>Imagens 3D e orçamento transparente — só assina quando estiver satisfeito</p></div>
+<div class="step rv"><div class="step-num">04</div><h3>Fabricação Personalizada</h3><p>Produção padronizada em fábrica, controlo de qualidade e prazos controlados</p></div>
+<div class="step rv"><div class="step-num">05</div><h3>Instalação e Aceitação</h3><p>Instalação profissional, inspeção no local e assistência vitalícia</p></div>
+</div>
+</div>
+</section>
+<section class="section paper">
+<div class="container">
+<div class="section-head center rv">
+<p class="eyebrow">TESTIMONIALS</p>
+<h2>Testemunhos reais de clientes</h2>
+<p>Cada avaliação positiva representa a tranquilidade por trás de uma porta ou janela bem feita.</p>
+</div>
+<div class="quotes">
+<div class="quote rv">
+<p>Antes de substituir as janelas, tínhamos uma estrada mesmo por baixo de casa e o ruído à noite dificultava o sono. O técnico da Jinjiang fez a medição com muito cuidado. Depois da instalação, a redução do ruído foi imediata, o movimento ficou muito suave e até os vizinhos perguntaram quem tinha feito o trabalho.</p>
+<div class="q-who"><span class="q-ava">Lin</span><div><div class="q-name">Dª. Lin</div><div class="q-proj">Binjiang Residence · Sistemas de portas e janelas</div></div></div>
+</div>
+<div class="quote rv">
+<p>Fizemos uma marquise na varanda. Desde o projeto até à instalação demorou cerca de dez dias. A equipa trabalhou de forma organizada, deixou tudo limpo e testámos durante a chuva sem qualquer infiltração. Agora toda a família adora tomar chá na marquise.</p>
+<div class="q-who"><span class="q-ava">Chen</span><div><div class="q-name">Sr. Chen</div><div class="q-proj">Vanke Emerald · Marquise</div></div></div>
+</div>
+<div class="quote rv">
+<p>Comparei três fornecedores. Os materiais dos perfis e o orçamento da Jinjiang foram os mais claros, sem custos ocultos. A equipa de instalação foi muito profissional e ainda explicou como manter as ferragens. O acompanhamento pós-venda também foi rápido.</p>
+<div class="q-who"><span class="q-ava">Zhou</span><div><div class="q-name">Dª. Zhou</div><div class="q-proj">Rongchuang No. 1 Residence · Janelas de alumínio com corte térmico</div></div></div>
+</div>
+</div>
+</div>
+</section>
+<div class="cta-band">
+<div class="container">
+<div class="cta-inner rv">
+<div>
+<h2>Quer saber quanto custa substituir portas e janelas?</h2>
+<p>Medição gratuita no local, orçamento transparente e sem custos ocultos. Marque agora e beneficie de um crédito pela substituição das janelas antigas.</p>
+</div>
+<div class="cta-actions">
+<a class="btn btn-accent" data-nav="contact" href="#contact">Agendar Agora</a>
+<a class="btn btn-ghost" data-nav="service" href="#service">Conhecer os Serviços</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= 视图：Produtos ================= -->
+<section class="view" data-view="product" id="view-product">
+<div class="page-hero">
+<div class="ph-bg"><img alt="Edifício comercial moderno com fachada de vidro" loading="lazy" src="../assets/product-curtainwall.jpg"/></div>
+<div class="container">
+<p class="crumb">Início / <span>Produtos</span></p>
+<h1>Produtos</h1>
+<p>Sistemas de portas e janelas, janelas de batente, portas de correr, portas dobráveis, marquises e fachadas — uma gama completa para projetos residenciais e comerciais, com personalização.</p>
+</div>
+</div>
+<section class="section">
+<div class="container">
+<div aria-label="Filtro de categorias de produtos" class="filters rv" id="prodFilters" role="tablist">
+<button class="fbtn active" data-filter="all">Todos os Produtos</button>
+<button class="fbtn" data-filter="system">Janelas e Portas de Sistema</button>
+<button class="fbtn" data-filter="casement">Janelas de Abrir</button>
+<button class="fbtn" data-filter="sliding">Portas de Correr</button>
+<button class="fbtn" data-filter="folding">Portas Dobráveis</button>
+<button class="fbtn" data-filter="sunroom">Sunrooms</button>
+<button class="fbtn" data-filter="curtainwall">Obras de Fachadas Curtain Wall</button>
+</div>
+<div class="prod-grid" id="prodGrid">
+<article class="pcard rv" data-cat="system">
+<div class="pcard-media"><img alt="Sistemas de portas e janelas instalados numa sala" loading="lazy" src="../assets/product-system.jpg"/><span class="pcard-tag">Janelas e Portas de Sistema</span></div>
+<div class="pcard-body">
+<h3>Série Hengyu de sistemas de portas e janelas</h3>
+<p>Conceção integral com drenagem oculta e câmaras de pressão equilibrada, combinando estanquidade ao ar e à água com isolamento térmico para habitações premium e apartamentos amplos.</p>
+<div class="pcard-specs">
+<div class="spec"><span class="k">Perfil</span><span class="v">Alumínio 6063-T5 com corte térmico</span></div>
+<div class="spec"><span class="k">Vidro</span><span class="v">5+20A+5 Low-E</span></div>
+<div class="spec"><span class="k">Ferragens</span><span class="v">Sistema de fecho multiponto</span></div>
+<div class="spec"><span class="k">Isolamento acústico</span><span class="v">≥ 40 dB</span></div>
+</div>
+</div>
+<div class="pcard-foot">
+<span class="price">Preço personalizado · desde</span>
+<a class="more" data-nav="contact" href="#contact">Solicitar Orçamento <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+</div>
+</article>
+<article class="pcard rv" data-cat="casement">
+<div class="pcard-media"><img alt="Janela de batente em alumínio com corte térmico em posição oscilobatente" loading="lazy" src="../assets/product-casement.jpg"/><span class="pcard-tag">Janelas de Alumínio com Corte Térmico</span></div>
+<div class="pcard-body">
+<h3>Janelas de batente da série Jingjie</h3>
+<p>Perfis de três câmaras com corte térmico e tripla vedação, com limitadores de abertura e cordões de segurança. Alternância fácil entre abertura e oscilobatente para ventilação e segurança.</p>
+<div class="pcard-specs">
+<div class="spec"><span class="k">Perfil</span><span class="v">Alumínio com corte térmico</span></div>
+<div class="spec"><span class="k">Vidro</span><span class="v">Vidro isolante 5+12A+5</span></div>
+<div class="spec"><span class="k">Ferragens</span><span class="v">Dobradiças premium</span></div>
+<div class="spec"><span class="k">Abertura</span><span class="v">Oscilobatente</span></div>
+</div>
+</div>
+<div class="pcard-foot">
+<span class="price">Desde ¥980 / m²</span>
+<a class="more" data-nav="contact" href="#contact">Solicitar Orçamento <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+</div>
+</article>
+<article class="pcard rv" data-cat="sliding">
+<div class="pcard-media"><img alt="Grandes portas de correr totalmente abertas para o pátio" loading="lazy" src="../assets/product-sliding.jpg"/><span class="pcard-tag">Portas de Correr</span></div>
+<div class="pcard-body">
+<h3>Portas de correr da série Jiying</h3>
+<p>Os perfis ultrafinos maximizam a área de vidro e a entrada de luz. As roldanas reforçadas garantem estabilidade, deslizamento suave e boa vedação.</p>
+<div class="pcard-specs">
+<div class="spec"><span class="k">Perfil</span><span class="v">Alumínio de estrutura estreita reforçada</span></div>
+<div class="spec"><span class="k">Vidro</span><span class="v">Vidro duplo temperado</span></div>
+<div class="spec"><span class="k">Ferragens</span><span class="v">Conjunto de roldanas silenciosas</span></div>
+<div class="spec"><span class="k">Folha única</span><span class="v">Até 3,5 m</span></div>
+</div>
+</div>
+<div class="pcard-foot">
+<span class="price">Desde ¥1.180 / m²</span>
+<a class="more" data-nav="contact" href="#contact">Solicitar Orçamento <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+</div>
+</article>
+<article class="pcard rv" data-cat="folding">
+<div class="pcard-media"><img alt="Portas dobráveis totalmente abertas ligando interior e exterior" loading="lazy" src="../assets/product-folding.jpg"/><span class="pcard-tag">Portas Dobráveis</span></div>
+<div class="pcard-body">
+<h3>Portas dobráveis da série Yunkai</h3>
+<p>Várias folhas dobráveis permitem abrir toda a parede, ligando interior e exterior. Disponível com calha inferior ou sistema suspenso, facilitando a limpeza.</p>
+<div class="pcard-specs">
+<div class="spec"><span class="k">Perfil</span><span class="v">Liga de alumínio reforçada</span></div>
+<div class="spec"><span class="k">Vidro</span><span class="v">Vidro laminado temperado opcional</span></div>
+<div class="spec"><span class="k">Ferragens</span><span class="v">Dobradiças articuladas</span></div>
+<div class="spec"><span class="k">Abertura</span><span class="v">Abertura total de 90%</span></div>
+</div>
+</div>
+<div class="pcard-foot">
+<span class="price">Desde ¥1.380 / m²</span>
+<a class="more" data-nav="contact" href="#contact">Solicitar Orçamento <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+</div>
+</article>
+<article class="pcard rv" data-cat="sunroom">
+<div class="pcard-media"><img alt="Marquise com sofá e área de lazer" loading="lazy" src="../assets/product-sunroom.jpg"/><span class="pcard-tag">Sunrooms</span></div>
+<div class="pcard-body">
+<h3>Marquises da série Muguang</h3>
+<p>Sistema de drenagem e isolamento térmico do teto concebido especificamente, com claraboia elétrica opcional para melhorar a ventilação e dissipação de calor, permitindo utilizar varandas e terraços durante todo o ano.</p>
+<div class="pcard-specs">
+<div class="spec"><span class="k">Estrutura</span><span class="v">Aço galvanizado a quente + alumínio</span></div>
+<div class="spec"><span class="k">Cobertura</span><span class="v">Vidro laminado + isolante</span></div>
+<div class="spec"><span class="k">Impermeabilização</span><span class="v">Selante estrutural + perfil de cobertura</span></div>
+<div class="spec"><span class="k">Opcional</span><span class="v">Claraboia elétrica</span></div>
+</div>
+</div>
+<div class="pcard-foot">
+<span class="price">Desde ¥1.680 / m²</span>
+<a class="more" data-nav="contact" href="#contact">Solicitar Orçamento <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+</div>
+</article>
+<article class="pcard rv" data-cat="curtainwall">
+<div class="pcard-media"><img alt="Fachada de edifício comercial moderno com vidro" loading="lazy" src="../assets/product-curtainwall.jpg"/><span class="pcard-tag">Obras de Fachadas Curtain Wall</span></div>
+<div class="pcard-body">
+<h3>Fachadas de vidro da série Lingyun</h3>
+<p>Realizamos projetos de fachadas unitizadas e de montantes, integrando projeto de execução, processamento de perfis e instalação em obra para escritórios, edifícios comerciais e públicos.</p>
+<div class="pcard-specs">
+<div class="spec"><span class="k">Sistema</span><span class="v">Montantes / unitizada</span></div>
+<div class="spec"><span class="k">Vidro</span><span class="v">Temperado + laminado</span></div>
+<div class="spec"><span class="k">Resistência ao vento</span><span class="v">Conforme classificação do projeto</span></div>
+<div class="spec"><span class="k">Serviço</span><span class="v">Projeto executivo + instalação</span></div>
+</div>
+</div>
+<div class="pcard-foot">
+<span class="price">Orçamento de projeto</span>
+<a class="more" data-nav="contact" href="#contact">Consultar solução <svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+</div>
+</article>
+</div>
+<p class="quote-note rv">Os produtos e preços indicativos acima servem apenas como referência. O orçamento final depende da medição no local e da configuração confirmada. <a data-nav="contact" href="#contact">Obter uma solução personalizada gratuita</a></p>
+</div>
+</section>
+<div class="cta-band">
+<div class="container">
+<div class="cta-inner rv">
+<div>
+<h2>Não encontra o modelo ideal?</h2>
+<p>Aceitamos personalização por desenho, cor e dimensão. Diga-nos o que pretende e os nossos designers transformam a ideia numa solução concreta.</p>
+</div>
+<div class="cta-actions">
+<a class="btn btn-accent" data-nav="contact" href="#contact">Solicitar Solução Personalizada</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= 视图：Sobre Nós ================= -->
+<section class="view" data-view="about" id="view-about">
+<div class="page-hero">
+<div class="ph-bg"><img alt="Linha de produção moderna da Jinjiang" loading="lazy" src="../assets/about-factory.jpg"/></div>
+<div class="container">
+<p class="crumb">Início / <span>Sobre Nós</span></p>
+<h1>Sobre Nós</h1>
+<p>Há 15 anos fazemos uma só coisa: fabricar cada porta e janela com qualidade, para que cada família viva com conforto e tranquilidade.</p>
+</div>
+</div>
+<section class="section">
+<div class="container">
+<div class="about-intro">
+<div class="ai-media rv">
+<img alt="Linha automatizada de produção de perfis de alumínio" loading="lazy" src="../assets/about-factory.jpg"/>
+<div class="ai-badge"><strong>15<small>anos</small></strong><span>Especialização em portas e janelas</span></div>
+</div>
+<div class="rv">
+<p class="eyebrow">OUR STORY</p>
+<h2>De uma pequena oficina a uma fábrica inteligente com capacidade anual de 100.000 m²</h2>
+<p>Em 2010, a Jinjiang Portas e Janelas começou como uma pequena oficina. Da produção para terceiros à criação da nossa própria marca, seguimos um princípio simples: fazer bem os detalhes que não se veem — perfis, vidro, ferragens e processo — e a reputação surge naturalmente.</p>
+<p>Hoje, a Jinjiang dispõe de fábrica própria e linhas de produção normalizadas. O nosso portefólio inclui portas e janelas residenciais, marquises e fachadas, com soluções fornecidas a proprietários de mais de 300 empreendimentos em todo o país.</p>
+<ul class="p-points">
+<li><svg fill="none" stroke-width="2" viewbox="0 0 24 24"><path d="M5 12l5 5 9-10"></path></svg>Fábrica própria · Sem marca branca</li>
+<li><svg fill="none" stroke-width="2" viewbox="0 0 24 24"><path d="M5 12l5 5 9-10"></path></svg>Serviço personalizado de designer</li>
+<li><svg fill="none" stroke-width="2" viewbox="0 0 24 24"><path d="M5 12l5 5 9-10"></path></svg>Equipa própria de instalação</li>
+<li><svg fill="none" stroke-width="2" viewbox="0 0 24 24"><path d="M5 12l5 5 9-10"></path></svg>Compromisso de garantia de 10 anos</li>
+</ul>
+<a class="btn btn-primary" data-nav="contact" href="#contact">Agendar Visita à Fábrica</a>
+</div>
+</div>
+<div class="stats-row">
+<div class="srow rv"><div class="num"><span class="counter" data-count="15">0</span><i>anos</i></div><div class="lbl">Experiência no setor</div></div>
+<div class="srow rv"><div class="num"><span class="counter" data-count="100000">0</span><i>㎡</i></div><div class="lbl">Capacidade anual</div></div>
+<div class="srow rv"><div class="num"><span class="counter" data-count="300">0</span><i>+</i></div><div class="lbl">Empreendimentos parceiros</div></div>
+<div class="srow rv"><div class="num"><span class="counter" data-count="20000">0</span><i>+</i></div><div class="lbl">Famílias atendidas</div></div>
+</div>
+<div class="section-head rv">
+<p class="eyebrow">MILESTONES</p>
+<h2>Nossa História</h2>
+<p>Passo a passo, construímos o crescimento da Jinjiang.</p>
+</div>
+<div class="tl">
+<div class="tl-item rv"><div class="tl-time">2010</div><div class="tl-axis"><span class="tl-dot"></span></div><div class="tl-body"><h3>Criação da marca</h3><p>Começámos numa pequena oficina junto a uma zona residencial, dedicada ao fabrico e instalação de portas e janelas de alumínio.</p></div></div>
+<div class="tl-item rv"><div class="tl-time">2013</div><div class="tl-axis"><span class="tl-dot"></span></div><div class="tl-body"><h3>Construção da fábrica própria</h3><p>Mudámo-nos para instalações próprias e introduzimos equipamentos CNC de corte e montagem de cantos, aumentando significativamente a capacidade e a precisão.</p></div></div>
+<div class="tl-item rv"><div class="tl-time">2016</div><div class="tl-axis"><span class="tl-dot"></span></div><div class="tl-body"><h3>Lançamento da linha de sistemas</h3><p>Lançámos a linha de sistemas, passando da produção de unidades individuais para o design integrado de janelas completas.</p></div></div>
+<div class="tl-item rv"><div class="tl-time">2019</div><div class="tl-axis"><span class="tl-dot"></span></div><div class="tl-body"><h3>Expansão da rede de serviços</h3><p>Expandimos a área de serviço às cidades vizinhas, ultrapassando 3.000 unidades instaladas por ano e criando pontos de assistência pós-venda.</p></div></div>
+<div class="tl-item rv"><div class="tl-time">2022</div><div class="tl-axis"><span class="tl-dot"></span></div><div class="tl-body"><h3>Modernização da produção inteligente</h3><p>Implementámos linhas automatizadas e um sistema digital de encomendas, reduzindo os prazos de entrega em 30%.</p></div></div>
+<div class="tl-item rv"><div class="tl-time">2025</div><div class="tl-axis"><span class="tl-dot"></span></div><div class="tl-body"><h3>Mais de 20.000 famílias atendidas</h3><p>Mais de 20.000 famílias foram atendidas, com a taxa de recomendação de clientes entre as mais elevadas do setor durante três anos consecutivos.</p></div></div>
+</div>
+</div>
+</section>
+<section class="section paper">
+<div class="container">
+<div class="section-head center rv">
+<p class="eyebrow">OUR VALUES</p>
+<h2>Nossos Valores</h2>
+<p>Os slogans ficam na parede; os padrões ficam no produto.</p>
+</div>
+<div class="vals">
+<div class="val rv"><div class="v-idx">01</div><h3>Rigor artesanal</h3><p>Cada processo tem normas de inspeção: selagem dos cantos, juntas contínuas e drenagem desimpedida, com teste de água e funcionamento de cada unidade antes da expedição.</p></div>
+<div class="val rv"><div class="v-idx">02</div><h3>Integridade</h3><p>Cada item é claramente indicado no orçamento. Perfis, vidro e ferragens correspondem aos materiais especificados, sem substituições de baixa qualidade nem custos ocultos.</p></div>
+<div class="val rv"><div class="v-idx">03</div><h3>Inovação</h3><p>Acompanhamos continuamente a tecnologia de sistemas e a aplicação de novos materiais, tornando bons produtos acessíveis a mais famílias a preços mais equilibrados.</p></div>
+<div class="val rv"><div class="v-idx">04</div><h3>Responsabilidade</h3><p>Instalação conforme normas e assistência pós-venda atempada são responsabilidades profissionais básicas. Assumimos a responsabilidade por cada porta e janela entregue.</p></div>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="container">
+<div class="section-head rv">
+<p class="eyebrow">CERTIFICATIONS</p>
+<h2>Certificações e Capacidade</h2>
+<p>Deixe os padrões falarem por si e escolha com confiança.</p>
+</div>
+<div class="certs">
+<div class="certs-media rv"><img alt="Equipa de instalação da Jinjiang seguindo procedimentos normalizados" loading="lazy" src="../assets/service-install.jpg"/></div>
+<div class="cert-list">
+<div class="cert rv"><span class="cert-icon"><svg fill="none" stroke-width="1.6" viewbox="0 0 24 24"><path d="M12 2l8 3v6c0 5-3.5 8.5-8 11-4.5-2.5-8-6-8-11V5l8-3z"></path><path d="M8.5 12l2.5 2.5 4.5-5"></path></svg></span><div><strong>ISO 9001</strong><span>Certificação do sistema de gestão da qualidade</span></div></div>
+<div class="cert rv"><span class="cert-icon"><svg fill="none" stroke-width="1.6" viewbox="0 0 24 24"><rect height="18" rx="2" width="16" x="4" y="3"></rect><path d="M8 8h8M8 12h8M8 16h5"></path></svg></span><div><strong>Certificação CCC</strong><span>Certificação obrigatória de vidro de segurança</span></div></div>
+<div class="cert rv"><span class="cert-icon"><svg fill="none" stroke-width="1.6" viewbox="0 0 24 24"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"></path><circle cx="12" cy="12" r="4"></circle></svg></span><div><strong>Certificação de produto energeticamente eficiente</strong><span>Coeficiente de transmissão térmica conforme</span></div></div>
+<div class="cert rv"><span class="cert-icon"><svg fill="none" stroke-width="1.6" viewbox="0 0 24 24"><path d="M4 20h16M6 20V9l6-5 6 5v11"></path><path d="M10 20v-6h4v6"></path></svg></span><div><strong>Unidade de produção própria</strong><span>Fábrica inteligente de 12.000 m²</span></div></div>
+</div>
+</div>
+</div>
+</section>
+<div class="cta-band">
+<div class="container">
+<div class="cta-inner rv">
+<div>
+<h2>Visite a fábrica — vale mais do que mil palavras</h2>
+<p>Marque uma visita à fábrica e ao showroom para conhecer pessoalmente os perfis, processos e padrões de instalação.</p>
+</div>
+<div class="cta-actions">
+<a class="btn btn-accent" data-nav="contact" href="#contact">Marcar visita à fábrica</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= 视图：Serviços ================= -->
+<section class="view" data-view="service" id="view-service">
+<div class="page-hero">
+<div class="ph-bg"><img alt="Técnico Jinjiang a nivelar uma janela de altura total" loading="lazy" src="../assets/service-install.jpg"/></div>
+<div class="container">
+<p class="crumb">Início / <span>Serviços</span></p>
+<h1>Serviços</h1>
+<p>Medição gratuita, design personalizado, fornecimento direto da fábrica, instalação profissional e assistência vitalícia — cada etapa da substituição fica claramente organizada.</p>
+</div>
+</div>
+<section class="section">
+<div class="container">
+<div class="section-head center rv">
+<p class="eyebrow">OUR SERVICES</p>
+<h2>Seis Garantias de Serviço</h2>
+<p>Da primeira consulta ao último acompanhamento, cada etapa tem um responsável, padrões claros e compromissos definidos.</p>
+</div>
+<div class="svc-grid">
+<div class="svc rv"><span class="svc-num">01</span>
+<div class="svc-icon"><svg fill="none" stroke-width="1.6" viewbox="0 0 24 24"><path d="M3 6h18M5 6v13a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V6M9 6V4h6v2M8 11h3M8 15h3"></path></svg></div>
+<h3>Medição gratuita no local</h3>
+<p>Um técnico profissional visita o local com as ferramentas necessárias, mede os vãos, avalia a estrutura das paredes e fornece uma base precisa para a personalização — totalmente gratuito.</p>
+</div>
+<div class="svc rv"><span class="svc-num">02</span>
+<div class="svc-icon"><svg fill="none" stroke-width="1.6" viewbox="0 0 24 24"><path d="M12 19l7-7 3 3-7 7-3-3zM18 13l-1.5-7.5L2 2l3.5 14.5L13 18"></path><circle cx="11" cy="11" r="2"></circle></svg></div>
+<h3>Design personalizado</h3>
+<p>Os designers desenvolvem a solução e as imagens de acordo com o espaço, a luz natural e o estilo. Cores dos perfis, configuração do vidro e tipos de abertura são personalizáveis.</p>
+</div>
+<div class="svc rv"><span class="svc-num">03</span>
+<div class="svc-icon"><svg fill="none" stroke-width="1.6" viewbox="0 0 24 24"><path d="M3 21V8l9-5 9 5v13M3 21h18M3 21h0M9 21v-6h6v6"></path></svg></div>
+<h3>Fornecimento e instalação diretos de fábrica</h3>
+<p>Produção na nossa própria fábrica, sem margens de intermediários. Planeamento centralizado e entrega atempada permitem controlar a qualidade desde o perfil.</p>
+</div>
+<div class="svc rv"><span class="svc-num">04</span>
+<div class="svc-icon"><svg fill="none" stroke-width="1.6" viewbox="0 0 24 24"><path d="M14.7 6.3a4.5 4.5 0 0 0-6 6L3 18v3h3l5.7-5.7a4.5 4.5 0 0 0 6-6L14 13l-3-3 3.7-3.7z"></path></svg></div>
+<h3>Equipa profissional de instalação</h3>
+<p>A nossa equipa certificada segue normas para enchimento com espuma, selagem impermeável e nivelamento, mantendo o local organizado e limpo.</p>
+</div>
+<div class="svc rv"><span class="svc-num">05</span>
+<div class="svc-icon"><svg fill="none" stroke-width="1.6" viewbox="0 0 24 24"><path d="M20 12a8 8 0 1 1-2.34-5.66M20 4v5h-5"></path><path d="M9 12l2 2 4-4"></path></svg></div>
+<h3>Assistência pós-venda vitalícia</h3>
+<p>Reparações gratuitas durante a garantia; depois, manutenção vitalícia apenas ao preço de custo. Cada encomenda é registada e acompanhada regularmente por telefone.</p>
+</div>
+<div class="svc rv"><span class="svc-num">06</span>
+<div class="svc-icon"><svg fill="none" stroke-width="1.6" viewbox="0 0 24 24"><path d="M3 7h11M3 12h11M3 17h7M17 5v14M17 5l4 4-4 4"></path></svg></div>
+<h3>Serviço de troca de janelas antigas</h3>
+<p>Avaliamos as janelas antigas para crédito de troca e tratamos da desmontagem, transporte e instalação num só serviço.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="section paper">
+<div class="container">
+<div class="section-head center rv">
+<p class="eyebrow">SERVICE PROCESS</p>
+<h2>Processo de Serviço</h2>
+<p>Um processo normalizado de seis etapas, com entregas claras em cada fase, para saber sempre o que esperar.</p>
+</div>
+<div class="svc-flow">
+<div class="svc-item rv"><div class="tl-time">STEP 01</div><div class="svc-axis"><span class="svc-n">1</span></div><div class="svc-body"><h3>Consulta</h3><p>Contacte-nos por telefone, WeChat ou na loja. Um consultor analisa o espaço, orçamento e necessidades e marca a visita.</p></div></div>
+<div class="svc-item rv"><div class="tl-time">STEP 02</div><div class="svc-axis"><span class="svc-n">2</span></div><div class="svc-body"><h3>Medição Gratuita</h3><p>Um técnico mede os vãos e avalia paredes, piso e condições de iluminação, emitindo um relatório de medição.</p></div></div>
+<div class="svc-item rv"><div class="tl-time">STEP 03</div><div class="svc-axis"><span class="svc-n">3</span></div><div class="svc-body"><h3>Solução e orçamento</h3><p>O designer apresenta a configuração dos produtos, imagens e orçamento detalhado. Após confirmação, assina-se o contrato e paga-se o sinal.</p></div></div>
+<div class="svc-item rv"><div class="tl-time">STEP 04</div><div class="svc-axis"><span class="svc-n">4</span></div><div class="svc-body"><h3>Fabricação Personalizada</h3><p>A fábrica programa a produção por encomenda: corte dos perfis, montagem, processamento do vidro e inspeção final, com acompanhamento de todo o processo.</p></div></div>
+<div class="svc-item rv"><div class="tl-time">STEP 05</div><div class="svc-axis"><span class="svc-n">5</span></div><div class="svc-body"><h3>Instalação e receção</h3><p>A equipa profissional trata da desmontagem, instalação, selagem e limpeza numa única intervenção, seguida de inspeção item a item.</p></div></div>
+<div class="svc-item rv"><div class="tl-time">STEP 06</div><div class="svc-axis"><span class="svc-n">6</span></div><div class="svc-body"><h3>Acompanhamento pós-venda</h3><p>Cada encomenda fica registada e é acompanhada regularmente. Durante a garantia, a manutenção no local é gratuita, com serviço vitalício.</p></div></div>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="container">
+<div class="section-head center rv">
+<p class="eyebrow">WARRANTY</p>
+<h2>Política de Garantia</h2>
+<p>Compromissos por escrito tornam o serviço pós-venda claro e verificável.</p>
+</div>
+<div class="rv">
+<table class="warranty">
+<thead><tr><th>Item de garantia</th><th>Período de garantia</th><th>Descrição</th></tr></thead>
+<tbody>
+<tr><td>Perfis de portas e janelas</td><td>10 anos</td><td>Substituição gratuita por defeitos do perfil</td></tr>
+<tr><td>Ferragens</td><td>5 anos</td><td>Reparação ou substituição gratuita de dobradiças, roldanas, fechaduras e outras ferragens</td></tr>
+<tr><td>Produtos de vidro</td><td>3 anos</td><td>Substituição gratuita em caso de quebra espontânea ou embaciamento não provocado pelo utilizador</td></tr>
+<tr><td>Juntas de vedação</td><td>2 anos</td><td>Substituição gratuita em caso de envelhecimento ou desprendimento</td></tr>
+<tr><td>Trabalho de instalação</td><td>Vitalício</td><td>Intervenção gratuita vitalícia no local para infiltrações, folgas e outros problemas de instalação</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section class="section paper">
+<div class="container">
+<div class="section-head center rv">
+<p class="eyebrow">FAQ</p>
+<h2>Perguntas Frequentes</h2>
+<p>O que talvez queira saber sobre a substituição</p>
+</div>
+<div class="faq">
+<div class="faq-item rv">
+<button aria-expanded="false" class="faq-q">Quanto tempo demora a substituir uma janela?<span class="faq-ic"><svg fill="none" stroke-width="2" viewbox="0 0 24 24"><path d="M12 5v14M5 12h14"></path></svg></span></button>
+<div class="faq-a"><p>Os formatos standard demoram normalmente cerca de 10–15 dias desde a medição até à instalação. Projetos especiais, como formas personalizadas, marquises e fachadas, dependem do plano de produção e a data de entrega é definida no contrato.</p></div>
+</div>
+<div class="faq-item rv">
+<button aria-expanded="false" class="faq-q">A medição e o orçamento são gratuitos?<span class="faq-ic"><svg fill="none" stroke-width="2" viewbox="0 0 24 24"><path d="M12 5v14M5 12h14"></path></svg></span></button>
+<div class="faq-a"><p>A medição no local, o design e o orçamento são totalmente gratuitos. Mesmo que não avance, pode levar os resultados da medição para referência sem qualquer custo.</p></div>
+</div>
+<div class="faq-item rv">
+<button aria-expanded="false" class="faq-q">O que acontece às janelas antigas? Podem ser desmontadas e substituídas?<span class="faq-ic"><svg fill="none" stroke-width="2" viewbox="0 0 24 24"><path d="M12 5v14M5 12h14"></path></svg></span></button>
+<div class="faq-a"><p>Sim. Prestamos um serviço completo de desmontagem, transporte e instalação. As antigas portas e janelas podem ser avaliadas para crédito na compra das novas, sem necessidade de as tratar pessoalmente.</p></div>
+</div>
+<div class="faq-item rv">
+<button aria-expanded="false" class="faq-q">A instalação pode danificar as paredes ou o interior?<span class="faq-ic"><svg fill="none" stroke-width="2" viewbox="0 0 24 24"><path d="M12 5v14M5 12h14"></path></svg></span></button>
+<div class="faq-a"><p>A equipa protege as superfícies acabadas, coloca proteção na zona de trabalho, limpa os resíduos e deixa o local em condições. Qualquer alteração estrutural é avaliada e comunicada durante a medição.</p></div>
+</div>
+<div class="faq-item rv">
+<button aria-expanded="false" class="faq-q">O que acontece se surgir um problema durante a garantia?<span class="faq-ic"><svg fill="none" stroke-width="2" viewbox="0 0 24 24"><path d="M12 5v14M5 12h14"></path></svg></span></button>
+<div class="faq-a"><p>Ligue para o serviço pós-venda ou contacte o seu consultor. Na zona urbana, a visita é feita em até 48 horas; durante a garantia, reparações e substituições são gratuitas, com acompanhamento.</p></div>
+</div>
+</div>
+</div>
+</section>
+<div class="cta-band">
+<div class="container">
+<div class="cta-inner rv">
+<div>
+<h2>O processo está claro? Então marque a medição.</h2>
+<p>Visita gratuita, design gratuito e orçamento transparente — deixe os profissionais tratar de tudo.</p>
+</div>
+<div class="cta-actions">
+<a class="btn btn-accent" data-nav="contact" href="#contact">Agendar Medição Gratuita</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= 视图：Contacte-nos ================= -->
+<section class="view" data-view="contact" id="view-contact">
+<div class="page-hero">
+<div class="ph-bg"><img alt="Sala luminosa com portas e janelas de altura total" loading="lazy" src="../assets/product-system.jpg"/></div>
+<div class="container">
+<p class="crumb">Início / <span>Contato</span></p>
+<h1>Contato</h1>
+<p>Deixe os seus requisitos e um consultor contactá-lo-á num dia útil para marcar uma medição gratuita no local.</p>
+</div>
+</div>
+<section class="section">
+<div class="container">
+<div class="contact-grid">
+<div class="cinfo">
+<div class="cinfo-card rv">
+<div class="cinfo-icon"><svg fill="none" stroke-width="1.6" viewbox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.4 2.1L8.1 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.6 1.9z"></path></svg></div>
+<div><h3>Linha de atendimento</h3><p><a href="tel:4008000000">85894763</a>Serviço nacional<br/><a href="tel:13800000000">18566489156</a>Atendimento 24 horas</p></div>
+</div>
+<div class="cinfo-card rv">
+<div class="cinfo-icon"><svg fill="none" stroke-width="1.6" viewbox="0 0 24 24"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z"></path><circle cx="12" cy="10" r="2.5"></circle></svg></div>
+<div><h3>Loja e fábrica</h3><p>Showroom da marca: 88, Avenida Keji, Zona de Alta Tecnologia<br/>Fábrica inteligente: pavilhão 12, Parque Industrial, Zona de Desenvolvimento Económico</p></div>
+</div>
+<div class="cinfo-card rv">
+<div class="cinfo-icon"><svg fill="none" stroke-width="1.6" viewbox="0 0 24 24"><rect height="14" rx="2" width="18" x="3" y="5"></rect><path d="M3 7l9 6 9-6"></path></svg></div>
+<div><h3>E-mail</h3><p><a href="mailto:928961569@qq.com">928961569@qq.com</a><br/><a href="mailto:sales@jinjiang-windows.com">sales@jinjiang-windows.com</a></p></div>
+</div>
+<div class="cinfo-card rv">
+<div class="cinfo-icon"><svg fill="none" stroke-width="1.6" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 3"></path></svg></div>
+<div><h3>Horário de Atendimento</h3><p>Segunda a domingo, 8:30–18:00<br/>Aberto nos feriados; a medição no local requer marcação prévia</p></div>
+</div>
+</div>
+<div class="cform rv">
+<h3>Agendar Medição Gratuita</h3>
+<p>Preencha o formulário abaixo e um consultor contactá-lo-á em breve para marcar a medição.</p>
+<form action="https://api.web3forms.com/submit" id="contactForm" method="POST" novalidate="">
+<input name="access_key" type="hidden" value="8e33aab7-889d-4660-865f-54109b465f4b"/>
+<input name="subject" type="hidden" value="Jinjiangportas e janelassite · Novo formulário de contacto"/>
+<input name="from_name" type="hidden" value="Jinjiangportas e janelassite"/>
+<input autocomplete="off" name="botcheck" style="display:none;" tabindex="-1" type="checkbox"/>
+<div class="form-grid">
+<div class="f-field">
+<label for="cf-name">Seu Nome <em>*</em></label>
+<input autocomplete="name" id="cf-name" name="name" placeholder="ex.: João Silva" required="" type="text"/>
+</div>
+<div class="f-field">
+<label for="cf-phone">Telefone <em>*</em></label>
+<input autocomplete="tel" id="cf-phone" name="phone" placeholder="Telemóvel ou telefone fixo" required="" type="tel"/>
+</div>
+<div class="f-field full">
+<label for="cf-area">Projeto / Condomínio</label>
+<input id="cf-area" name="area" placeholder="ex.: Empreendimento / Edifício 3" type="text"/>
+</div>
+<div class="f-field full">
+<label for="cf-type">Tipo de Projeto</label>
+<select id="cf-type" name="type">
+<option value="system">Janelas e Portas de Sistema</option>
+<option value="casement">Janelas de Alumínio com Corte Térmico</option>
+<option value="sliding">Portas de correr / Portas dobráveis</option>
+<option value="sunroom">Sunrooms</option>
+<option value="curtainwall">Obras de Fachadas Curtain Wall</option>
+<option value="other">Outro / Troca de janelas antigas</option>
+</select>
+</div>
+<div class="f-field full">
+<label for="cf-msg">Detalhes do Projeto</label>
+<textarea id="cf-msg" name="message" placeholder="Descreva brevemente as suas necessidades, como número de divisões e prazo pretendido"></textarea>
+</div>
+</div>
+<button class="btn btn-primary" type="submit">Enviar Solicitação</button>
+<div class="form-ok" id="formOk" role="status">
+<svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M5 12l5 5 9-10"></path></svg>
+<span>Enviado com sucesso! Um consultor contactá-lo-á num dia útil. Obrigado pela sua confiança.</span>
+</div>
+<p class="form-note">Ao enviar, concorda que o contactemos apenas sobre este pedido. Os seus dados serão mantidos estritamente confidenciais.</p>
+</form>
+</div>
+</div>
+<div class="map-band rv">
+<div class="mb-map">
+<svg aria-hidden="true" class="grid" xmlns="http://www.w3.org/2000/svg">
+<defs><pattern height="60" id="gridP" patternunits="userSpaceOnUse" width="60"><path d="M60 0H0v60" fill="none" stroke="#d5dade" stroke-width="1"></path></pattern></defs>
+<rect fill="url(#gridP)" height="100%" width="100%"></rect>
+</svg>
+<div class="map-pin"><span class="pin"></span></div>
+<div class="map-label">Jinjiang Portas e Janelas · Showroom da marca</div>
+<div class="map-addr"><strong>Showroom Jinjiang Portas e Janelas</strong>88, Avenida Keji, Zona de Alta Tecnologia<br/>Horário de Atendimento 8:30 – 18:00</div>
+</div>
+</div>
+</div>
+</section>
+<div class="cta-band">
+<div class="container">
+<div class="cta-inner rv">
+<div>
+<h2>Marque agora e beneficie de três vantagens</h2>
+<p>Medição gratuita + imagens de design gratuitas + crédito pela troca de janelas antigas. Marque esta semana e receba um kit de manutenção de ferragens.</p>
+</div>
+<div class="cta-actions">
+<a class="btn btn-accent" href="tel:4008000000">Ligar para Consultar</a>
+<a class="btn btn-ghost" data-nav="product" href="#product">Ver Produtos</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- ================= 页脚 ================= -->
+<footer class="site-footer">
+<div class="container">
+<div class="footer-grid">
+<div class="footer-brand">
+<a aria-label="Jinjiang Portas e JanelasInício" class="logo" data-nav="home" href="#home">
+<span class="logo-mark"><svg fill="none" stroke="#d8b878" stroke-width="1.8" viewbox="0 0 24 24"><rect height="18" rx="2" width="18" x="3" y="3"></rect><path d="M3 10h18M10 3v18M7 10l3 3 3-3"></path><path d="M7 17h4"></path></svg></span>
+<span>
+<span class="logo-name">Jinjiang Portas e Janelas</span>
+<span class="logo-sub">jinjiang DOORS &amp; WINDOWS</span>
+</span>
+</a>
+<p>Há 15 anos especializados em sistemas de portas e janelas, alumínio com corte térmico, portas de correr, marquises e fachadas. Fábrica própria, processos normalizados e assistência vitalícia — cada produto feito para durar.</p>
+</div>
+<div>
+<h4>Links Rápidos</h4>
+<ul class="footer-links">
+<li><a data-nav="home" href="#home">Início</a></li>
+<li><a data-nav="product" href="#product">Produtos</a></li>
+<li><a data-nav="about" href="#about">Sobre Nós</a></li>
+<li><a data-nav="service" href="#service">Serviços</a></li>
+<li><a data-nav="contact" href="#contact">Contato</a></li>
+</ul>
+</div>
+<div>
+<h4>Linha de Produtos</h4>
+<ul class="footer-links">
+<li><a data-nav="product" href="#product">Janelas e Portas de Sistema</a></li>
+<li><a data-nav="product" href="#product">Janelas de Alumínio com Corte Térmico</a></li>
+<li><a data-nav="product" href="#product">Portas de correr / Portas dobráveis</a></li>
+<li><a data-nav="product" href="#product">Sunrooms</a></li>
+<li><a data-nav="product" href="#product">Projetos de fachadas de vidro</a></li>
+</ul>
+</div>
+<div>
+<h4>Contato</h4>
+<ul class="footer-contact">
+<li><svg fill="none" stroke-width="1.6" viewbox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.4 2.1L8.1 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.6 1.9z"></path></svg><span>85894763 (Nacional)<br/>18566489156（24h）</span></li>
+<li><svg fill="none" stroke-width="1.6" viewbox="0 0 24 24"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z"></path><circle cx="12" cy="10" r="2.5"></circle></svg><span>88, Avenida Keji, Zona de Alta Tecnologia</span></li>
+<li><svg fill="none" stroke-width="1.6" viewbox="0 0 24 24"><rect height="14" rx="2" width="18" x="3" y="5"></rect><path d="M3 7l9 6 9-6"></path></svg><span>928961569@qq.com</span></li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom">
+<span>© 2026 Jinjiang Portas e Janelas jinjiang DOORS &amp; WINDOWS · Este é um site de demonstração; o conteúdo e os contactos podem ser substituídos antes do lançamento</span>
+<span>N.º de registo ICP: número de demonstração (substituir antes do lançamento)</span>
+</div>
+</div>
+</footer>
+<script>
+(function(){
+  "use strict";
+
+  /* ---------- 导航栏滚动状态 ---------- */
+  var header = document.getElementById('siteHeader');
+  function onScroll(){
+    if(window.scrollY > 10){ header.classList.add('scrolled'); }
+    else{ header.classList.remove('scrolled'); }
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+
+  /* ---------- 移动端菜单 ---------- */
+  var navToggle = document.getElementById('navToggle');
+  var navLinks = document.getElementById('navLinks');
+  navToggle.addEventListener('click', function(){
+    var open = navLinks.classList.toggle('open');
+    navToggle.classList.toggle('open', open);
+    navToggle.setAttribute('aria-label', open ? 'Fechar menu' : 'Abrir menu');
+  });
+
+  /* ---------- Hash 路由 ---------- */
+  var views = document.querySelectorAll('.view');
+  var navItems = document.querySelectorAll('[data-nav]');
+  var titles = {
+    home:'Jinjiang Portas e Janelas jinjiang · Sistemaportas e janelas·Alumínio com corte térmico·Marquises一站式定制',
+    product:'Produtos · Jinjiang Portas e Janelas jinjiang',
+    about:'Sobre Nós · Jinjiang Portas e Janelas jinjiang',
+    service:'Serviços · Jinjiang Portas e Janelas jinjiang',
+    contact:'Contacte-nos · Jinjiang Portas e Janelas jinjiang'
+  };
+
+  function showView(name, force){
+    var target = 'view-' + name;
+    var found = false;
+    views.forEach(function(v){
+      var on = (v.id === target);
+      v.classList.toggle('active', on);
+      if(on){ found = true; }
+    });
+    if(!found){ views[0].classList.add('active'); name = 'home'; }
+    navItems.forEach(function(a){
+      a.classList.toggle('active', a.getAttribute('data-nav') === name);
+    });
+    if(titles[name]){ document.title = titles[name]; }
+    if(force !== false){
+      window.scrollTo({top:0, behavior:'auto'});
+      revealCheck();
+      counterCheck();
+    }
+    return name;
+  }
+
+  function currentView(){
+    var h = window.location.hash.replace('#','');
+    return (h && h !== '/' && views.length) ? h : 'home';
+  }
+
+  window.addEventListener('hashchange', function(){
+    showView(currentView());
+    if(navLinks.classList.contains('open')){
+      navLinks.classList.remove('open');
+      navToggle.classList.remove('open');
+    }
+  });
+
+  /* 点击站内 #链接（产品卡等）确保路由生效 */
+  document.addEventListener('click', function(e){
+    var a = e.target.closest('a[href^="#"]');
+    if(!a) return;
+    var h = a.getAttribute('href').replace('#','');
+    if(h && document.getElementById('view-' + h)){ showView(h); }
+  });
+
+  /* ---------- 产品筛选 ---------- */
+  var filters = document.getElementById('prodFilters');
+  var prodGrid = document.getElementById('prodGrid');
+  if(filters && prodGrid){
+    var cards = prodGrid.querySelectorAll('.pcard');
+    filters.addEventListener('click', function(e){
+      var btn = e.target.closest('.fbtn');
+      if(!btn) return;
+      filters.querySelectorAll('.fbtn').forEach(function(b){ b.classList.remove('active'); });
+      btn.classList.add('active');
+      var f = btn.getAttribute('data-filter');
+      cards.forEach(function(c){
+        var show = (f === 'all') || (c.getAttribute('data-cat') === f);
+        c.style.display = show ? '' : 'none';
+        if(show){ c.classList.add('in'); }
+      });
+    });
+  }
+
+  /* ---------- FAQ 手风琴 ---------- */
+  document.querySelectorAll('.faq-item').forEach(function(item){
+    var q = item.querySelector('.faq-q');
+    var a = item.querySelector('.faq-a');
+    q.addEventListener('click', function(){
+      var open = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(function(o){
+        o.classList.remove('open');
+        o.querySelector('.faq-q').setAttribute('aria-expanded','false');
+        o.querySelector('.faq-a').style.maxHeight = '0px';
+      });
+      if(!open){
+        item.classList.add('open');
+        q.setAttribute('aria-expanded','true');
+        a.style.maxHeight = a.scrollHeight + 'px';
+      }
+    });
+  });
+
+  /* ---------- 联系表单（Web3Forms 提交） ---------- */
+var form = document.getElementById('contactForm');
+if(form){
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var name = document.getElementById('cf-name').value.trim();
+    var phone = document.getElementById('cf-phone').value.trim();
+    var phoneOk = phone.length >= 5 && /^[+\d][\d\s\-()]{4,}$/.test(phone);
+    if(!name){ alert('Indique o seu nome'); document.getElementById('cf-name').focus(); return; }
+    if(!phone){ alert('Indique o seu telefone'); document.getElementById('cf-phone').focus(); return; }
+    if(!phoneOk){ alert('O formato do telefone é inválido. Verifique e tente novamente.'); document.getElementById('cf-phone').focus(); return; }
+    var ok = document.getElementById('formOk');
+    var btn = form.querySelector('button[type=submit]');
+    btn.disabled = true;
+    btn.textContent = 'A enviar…';
+    fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: {'Accept': 'application/json'},
+      body: new FormData(form)
+    }).then(function(r){ return r.json(); }).then(function(data){
+      btn.disabled = false;
+      btn.textContent = 'Enviar pedido';
+      if(data.success){
+        ok.classList.add('show');
+        form.reset();
+        ok.scrollIntoView({behavior:'smooth', block:'center'});
+        setTimeout(function(){ ok.classList.remove('show'); }, 8000);
+      } else {
+        alert('Falha no envio：' + (data.message || 'Tente novamente mais tarde ou contacte a nossa linha de atendimento.'));
+      }
+    }).catch(function(){
+      btn.disabled = false;
+      btn.textContent = 'Enviar pedido';
+      alert('Erro de rede. Tente novamente mais tarde ou contacte a nossa linha de atendimento.');
+    });
+  });
+}
+
+  /* ---------- 滚动揭示 ---------- */
+  var revealEls = document.querySelectorAll('.rv');
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); }
+      });
+    }, {threshold:0.12, rootMargin:'0px 0px -6% 0px'});
+    revealEls.forEach(function(el){ io.observe(el); });
+    /* 若页面已在视口内但元素仍在可视区，直接触发 */
+    revealCheck();
+  } else {
+    revealEls.forEach(function(el){ el.classList.add('in'); });
+  }
+
+  function revealCheck(){
+    revealEls.forEach(function(el){
+      var r = el.getBoundingClientRect();
+      if(r.top < window.innerHeight && r.bottom > 0){ el.classList.add('in'); }
+    });
+  }
+
+  /* ---------- 数字滚动 ---------- */
+  var counters = document.querySelectorAll('.counter');
+  function animateCounter(el){
+    if(el.dataset.done === '1'){ return; }
+    el.dataset.done = '1';
+    var target = parseInt(el.getAttribute('data-count'), 10);
+    if(isNaN(target)){ el.textContent = '0'; return; }
+    var dur = 1600, start = null;
+    function step(ts){
+      if(!start){ start = ts; }
+      var p = Math.min((ts - start) / dur, 1);
+      var eased = 1 - Math.pow(1 - p, 3);
+      el.textContent = Math.round(target * eased).toLocaleString('en-US');
+      if(p < 1){ requestAnimationEstrutura(step); }
+    }
+    requestAnimationEstrutura(step);
+  }
+  function counterCheck(){
+    counters.forEach(function(c){
+      var r = c.getBoundingClientRect();
+      if(r.top < window.innerHeight * 1.5 && r.bottom > 0){ animateCounter(c); }
+    });
+  }
+  if('IntersectionObserver' in window && counters.length){
+    var cio = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){ animateCounter(en.target); cio.unobserve(en.target); }
+      });
+    }, {threshold:0.05});
+    counters.forEach(function(c){ cio.observe(c); });
+  } else {
+    counters.forEach(function(c){ c.textContent = parseInt(c.getAttribute('data-count'),10).toLocaleString('en-US'); });
+  }
+
+  /* ---------- 初始化 ---------- */
+  showView(currentView(), false);
+})();
+</script>
+<script>
+</script>
+</body>
+</html>
